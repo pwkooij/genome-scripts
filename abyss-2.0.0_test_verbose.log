@@ -1,0 +1,4192 @@
+/usr/bin/mpirun -np 8 ABYSS-P -k25 -q3 -vv   --coverage-hist=coverage.hist -s /path/to/test/test-bubbles.fa  -o /path/to/test/test-1.fa /path/to/test-data/reads1.fastq /path/to/test-data/reads2.fastq 
+ABySS 2.0.0
+ABYSS-P -k25 -q3 -vv --coverage-hist=coverage.hist -s /path/to/test/test-bubbles.fa -o /path/to/test/test-1.fa /path/to/test-data/reads1.fastq /path/to/test-data/reads2.fastq
+Running on 8 processors
+0: Running on host X
+4: Running on host X
+6: Running on host X
+7: Running on host X
+2: Running on host X
+3: Running on host X
+5: Running on host X
+1: Running on host X
+0: SetState 0 (was 18)
+0: Reading `/path/to/test-data/reads1.fastq'...
+3: SetState 0 (was 18)
+7: SetState 0 (was 18)
+1: SetState 0 (was 18)
+4: SetState 0 (was 18)
+6: SetState 0 (was 18)
+5: SetState 0 (was 18)
+2: SetState 0 (was 18)
+6: LoadSequences: 1e-06 s
+6: SetState 18 (was 0)
+3: LoadSequences: 1e-06 s
+3: SetState 18 (was 0)
+7: LoadSequences: 1e-06 s
+7: SetState 18 (was 0)
+4: LoadSequences: 1e-06 s
+4: SetState 18 (was 0)
+2: LoadSequences: 2e-06 s
+2: SetState 18 (was 0)
+1: Reading `/path/to/test-data/reads2.fastq'...
+5: LoadSequences: 1e-06 s
+5: SetState 18 (was 0)
+0: Read 20000 reads. 0: Hash load: 116759 / 268435456 = 0.000435 using 98.5 MB
+0: LoadSequences /path/to/test-data/reads1.fastq: 0.556 s
+0: LoadSequences: 0.556 s
+1: Read 20000 reads. 1: Hash load: 117065 / 268435456 = 0.000436 using 98.5 MB
+1: LoadSequences /path/to/test-data/reads2.fastq: 0.53 s
+1: LoadSequences: 0.53 s
+1: SetState 18 (was 0)
+0: SetState 1 (was 0)
+1: SetState 1 (was 18)
+4: SetState 1 (was 18)
+3: SetState 1 (was 18)
+2: SetState 1 (was 18)
+7: SetState 1 (was 18)
+6: SetState 1 (was 18)
+5: SetState 1 (was 18)
+1: Loaded 117065 k-mer.
+0: Loaded 116921 k-mer.
+4: Loaded 118224 k-mer.
+6: Loaded 117673 k-mer.
+2: Loaded 117676 k-mer.
+7: Loaded 116082 k-mer.
+3: Loaded 116399 k-mer.
+5: Loaded 118073 k-mer.
+3: Hash load: 116399 / 524288 = 0.222 using 10.8 MB
+7: Hash load: 116082 / 524288 = 0.221 using 10.7 MB
+2: Hash load: 117676 / 524288 = 0.224 using 10.8 MB
+5: Hash load: 118073 / 524288 = 0.225 using 10.8 MB
+0: Hash load: 116921 / 524288 = 0.223 using 10.8 MB
+6: Hash load: 117673 / 524288 = 0.224 using 10.8 MB
+1: Hash load: 117065 / 524288 = 0.223 using 10.9 MB
+4: Hash load: 118224 / 524288 = 0.225 using 10.8 MB
+Loaded 938113 k-mer. At least 30 MB of RAM is required.
+2: SetState 18 (was 1)
+7: SetState 18 (was 1)
+6: SetState 18 (was 1)
+1: SetState 18 (was 1)
+3: SetState 18 (was 1)
+4: SetState 18 (was 1)
+5: SetState 18 (was 1)
+Minimum k-mer coverage is 22
+0: Coverage: 22	Reconstruction: 307
+0: Coverage: 5.48	Reconstruction: 118716
+0: Coverage: 2.45	Reconstruction: 227624
+0: Coverage: 2.24	Reconstruction: 227624
+Using a coverage threshold of 2...
+The median k-mer coverage is 5
+The reconstruction is 227624
+The k-mer coverage threshold is 2.24
+Setting parameter e (erode) to 2
+Setting parameter E (erodeStrand) to 1
+Setting parameter c (coverage) to 2.24
+0: SetState 2 (was 1)
+Finding adjacenct k-mer...
+1: SetState 2 (was 18)
+2: SetState 2 (was 18)
+7: SetState 2 (was 18)
+4: SetState 2 (was 18)
+6: SetState 2 (was 18)
+3: SetState 2 (was 18)
+5: SetState 2 (was 18)
+7: GenerateAdjacency: 0.469 s
+7: SetState 18 (was 2)
+1: GenerateAdjacency: 0.495 s
+1: SetState 18 (was 2)
+5: GenerateAdjacency: 0.509 s
+5: SetState 18 (was 2)
+6: GenerateAdjacency: 0.513 s
+6: SetState 18 (was 2)
+0: GenerateAdjacency: 0.502 s
+2: GenerateAdjacency: 0.513 s
+2: SetState 18 (was 2)
+3: GenerateAdjacency: 0.523 s
+3: SetState 18 (was 2)
+4: GenerateAdjacency: 0.534 s
+4: SetState 18 (was 2)
+0: SetState 3 (was 2)
+4: SetState 3 (was 18)
+6: SetState 3 (was 18)
+2: SetState 3 (was 18)
+7: SetState 3 (was 18)
+1: SetState 3 (was 18)
+3: SetState 3 (was 18)
+5: SetState 3 (was 18)
+5: Added 238941 edges.
+6: Added 238029 edges.
+2: Added 238037 edges.
+7: Added 234741 edges.
+1: Added 236763 edges.
+4: Added 239286 edges.
+3: Added 235416 edges.
+3: SetState 18 (was 3)
+5: SetState 18 (was 3)
+6: SetState 18 (was 3)
+0: Added 236786 edges.
+Added 1897999 edges.
+0: SetState 4 (was 3)
+Eroding tips...
+0: SetState 4 (was 4)
+2: SetState 18 (was 3)
+7: SetState 18 (was 3)
+1: SetState 18 (was 3)
+4: SetState 18 (was 3)
+3: SetState 4 (was 18)
+6: SetState 4 (was 18)
+2: SetState 4 (was 18)
+7: SetState 4 (was 18)
+1: SetState 4 (was 18)
+4: SetState 4 (was 18)
+5: SetState 4 (was 18)
+7: Eroded 53946 tips.
+7: Erode: 0.0608 s
+7: SetState 5 (was 4)
+0: Eroded 56277 tips.
+0: Erode: 0.0633 s
+1: Eroded 56787 tips.
+1: Erode: 0.0636 s
+1: SetState 5 (was 4)
+3: Eroded 56792 tips.
+3: Erode: 0.0641 s
+3: SetState 5 (was 4)
+6: Eroded 57634 tips.
+6: Erode: 0.065 s
+2: Eroded 57659 tips.
+2: Erode: 0.0649 s
+4: Eroded 58015 tips.
+4: Erode: 0.0649 s
+6: SetState 5 (was 4)
+2: SetState 5 (was 4)
+4: SetState 5 (was 4)
+5: Eroded 58530 tips.
+5: Erode: 0.0657 s
+5: SetState 5 (was 4)
+0: SetState 6 (was 5)
+3: SetState 6 (was 5)
+1: SetState 6 (was 5)
+4: SetState 6 (was 5)
+7: SetState 6 (was 5)
+2: SetState 6 (was 5)
+6: SetState 6 (was 5)
+5: SetState 6 (was 5)
+1: completeOperation: 0.00973 s
+1: Eroded 5688 tips.
+5: completeOperation: 0.00952 s
+6: completeOperation: 0.00966 s
+6: Eroded 4932 tips.
+2: completeOperation: 0.0097 s
+2: Eroded 4875 tips.
+3: completeOperation: 0.00975 s
+3: Eroded 5292 tips.
+4: completeOperation: 0.00973 s
+4: Eroded 4958 tips.
+0: completeOperation: 0.00956 s
+0: Eroded 6009 tips.
+7: completeOperation: 0.00971 s
+7: Eroded 7919 tips.
+5: Eroded 4382 tips.
+Eroded 499695 tips.
+0: cleanup: 0 s
+6: cleanup: 0 s
+2: cleanup: 0 s
+3: cleanup: 1e-06 s
+4: cleanup: 0 s
+1: cleanup: 0 s
+7: cleanup: 1e-06 s
+5: cleanup: 1e-06 s
+7: Hash load: 54217 / 262144 = 0.207 using 11.8 MB
+2: Hash load: 55142 / 262144 = 0.21 using 11.9 MB
+0: Hash load: 54635 / 262144 = 0.208 using 11.8 MB
+1: Hash load: 54590 / 262144 = 0.208 using 12 MB
+5: Hash load: 55161 / 262144 = 0.21 using 11.9 MB
+6: Hash load: 55107 / 262144 = 0.21 using 11.9 MB
+3: Hash load: 54315 / 262144 = 0.207 using 11.8 MB
+4: Hash load: 55251 / 262144 = 0.211 using 11.9 MB
+2: SetState 18 (was 6)
+5: SetState 18 (was 6)
+7: SetState 18 (was 6)
+6: SetState 18 (was 6)
+1: SetState 18 (was 6)
+3: SetState 18 (was 6)
+4: SetState 18 (was 6)
+0: SetState 18 (was 6)
+0: SetState 7 (was 18)
+Pruning tips shorter than 1 bp...
+0: SetState 7 (was 7)
+1: SetState 7 (was 18)
+4: SetState 7 (was 18)
+3: SetState 7 (was 18)
+2: SetState 7 (was 18)
+7: SetState 7 (was 18)
+6: SetState 7 (was 18)
+5: SetState 7 (was 18)
+3: Pruned 1 tips.
+3: NetworkTrim: 0.00179 s
+3: SetState 18 (was 7)
+1: Pruned 0 tips.
+1: NetworkTrim: 0.00182 s
+4: Pruned 2 tips.
+4: NetworkTrim: 0.00182 s
+4: SetState 18 (was 7)
+6: Pruned 1 tips.
+6: NetworkTrim: 0.00182 s
+6: SetState 18 (was 7)
+1: SetState 18 (was 7)
+2: Pruned 1 tips.
+7: Pruned 3 tips.
+7: NetworkTrim: 0.00184 s
+7: SetState 18 (was 7)
+2: NetworkTrim: 0.00185 s
+2: SetState 18 (was 7)
+0: Pruned 2 tips.
+0: NetworkTrim: 0.00187 s
+5: Pruned 1 tips.
+5: NetworkTrim: 0.00186 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+6: SetState 8 (was 18)
+4: SetState 8 (was 18)
+1: SetState 8 (was 18)
+7: SetState 8 (was 18)
+2: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 3 marked k-mer.
+7: removeMarked: 0.00794 s
+7: SetState 18 (was 8)
+3: Removed 1 marked k-mer.
+3: removeMarked: 0.00796 s
+3: SetState 18 (was 8)
+1: removeMarked: 0.00797 s
+1: SetState 18 (was 8)
+0: Removed 2 marked k-mer.
+0: removeMarked: 0.00802 s
+4: Removed 2 marked k-mer.
+4: removeMarked: 0.00807 s
+4: SetState 18 (was 8)
+6: Removed 1 marked k-mer.
+6: removeMarked: 0.00814 s
+6: SetState 18 (was 8)
+2: Removed 1 marked k-mer.
+2: removeMarked: 0.00821 s
+2: SetState 18 (was 8)
+5: Removed 1 marked k-mer.
+5: removeMarked: 0.00808 s
+5: SetState 18 (was 8)
+Pruned 11 k-mer in 11 tips.
+Pruning tips shorter than 2 bp...
+0: SetState 7 (was 8)
+3: SetState 7 (was 18)
+2: SetState 7 (was 18)
+1: SetState 7 (was 18)
+7: SetState 7 (was 18)
+6: SetState 7 (was 18)
+4: SetState 7 (was 18)
+5: SetState 7 (was 18)
+7: Pruned 1 tips.
+7: NetworkTrim: 0.00166 s
+4: Pruned 1 tips.
+4: NetworkTrim: 0.00165 s
+4: SetState 18 (was 7)
+7: SetState 18 (was 7)
+6: Pruned 0 tips.
+6: NetworkTrim: 0.00169 s
+6: SetState 18 (was 7)
+1: Pruned 1 tips.
+1: NetworkTrim: 0.0017 s
+1: SetState 18 (was 7)
+0: Pruned 2 tips.
+0: NetworkTrim: 0.00172 s
+2: Pruned 1 tips.
+2: NetworkTrim: 0.00186 s
+2: SetState 18 (was 7)
+5: Pruned 1 tips.
+3: Pruned 1 tips.
+3: NetworkTrim: 0.00186 s
+3: SetState 18 (was 7)
+5: NetworkTrim: 0.00176 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+7: SetState 8 (was 18)
+4: SetState 8 (was 18)
+1: SetState 8 (was 18)
+3: SetState 8 (was 18)
+6: SetState 8 (was 18)
+2: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 1 marked k-mer.
+7: removeMarked: 0.00792 s
+3: Removed 3 marked k-mer.
+3: removeMarked: 0.00794 s
+7: SetState 18 (was 8)
+1: Removed 1 marked k-mer.
+3: SetState 18 (was 8)
+1: removeMarked: 0.00796 s
+1: SetState 18 (was 8)
+0: Removed 2 marked k-mer.
+0: removeMarked: 0.008 s
+4: Removed 5 marked k-mer.
+4: removeMarked: 0.00806 s
+4: SetState 18 (was 8)
+6: removeMarked: 0.00812 s
+6: SetState 18 (was 8)
+2: Removed 2 marked k-mer.
+2: removeMarked: 0.00818 s
+2: SetState 18 (was 8)
+5: Removed 2 marked k-mer.
+5: removeMarked: 0.00808 s
+5: SetState 18 (was 8)
+Pruned 16 k-mer in 8 tips.
+Pruning tips shorter than 4 bp...
+0: SetState 7 (was 8)
+1: SetState 7 (was 18)
+3: SetState 7 (was 18)
+4: SetState 7 (was 18)
+2: SetState 7 (was 18)
+7: SetState 7 (was 18)
+6: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 4 tips.
+4: NetworkTrim: 0.0018 s
+4: SetState 18 (was 7)
+1: Pruned 1 tips.
+1: NetworkTrim: 0.00184 s
+1: SetState 18 (was 7)
+6: Pruned 2 tips.
+6: NetworkTrim: 0.00187 s
+6: SetState 18 (was 7)
+7: Pruned 2 tips.
+7: NetworkTrim: 0.00191 s
+7: SetState 18 (was 7)
+0: Pruned 3 tips.
+0: NetworkTrim: 0.00198 s
+3: Pruned 4 tips.
+3: NetworkTrim: 0.00198 s
+2: Pruned 2 tips.
+3: SetState 18 (was 7)
+2: NetworkTrim: 0.00199 s
+2: SetState 18 (was 7)
+5: Pruned 3 tips.
+5: NetworkTrim: 0.00197 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+6: SetState 8 (was 18)
+4: SetState 8 (was 18)
+7: SetState 8 (was 18)
+2: SetState 8 (was 18)
+1: SetState 8 (was 18)
+3: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 9 marked k-mer.
+7: removeMarked: 0.00792 s
+7: SetState 18 (was 8)
+3: Removed 12 marked k-mer.
+3: removeMarked: 0.00793 s
+3: SetState 18 (was 8)
+1: Removed 7 marked k-mer.
+1: removeMarked: 0.00797 s
+1: SetState 18 (was 8)
+0: Removed 6 marked k-mer.
+0: removeMarked: 0.008 s
+4: Removed 9 marked k-mer.
+6: Removed 8 marked k-mer.
+6: removeMarked: 0.00809 s
+4: removeMarked: 0.00807 s
+4: SetState 18 (was 8)
+6: SetState 18 (was 8)
+2: Removed 10 marked k-mer.
+2: removeMarked: 0.00821 s
+2: SetState 18 (was 8)
+5: Removed 12 marked k-mer.
+5: removeMarked: 0.00809 s
+5: SetState 18 (was 8)
+Pruned 73 k-mer in 21 tips.
+Pruning tips shorter than 8 bp...
+0: SetState 7 (was 8)
+2: SetState 7 (was 18)
+3: SetState 7 (was 18)
+1: SetState 7 (was 18)
+4: SetState 7 (was 18)
+7: SetState 7 (was 18)
+6: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 0 tips.
+4: NetworkTrim: 0.00204 s
+4: SetState 18 (was 7)
+1: Pruned 3 tips.
+1: NetworkTrim: 0.00214 s
+1: SetState 18 (was 7)
+6: Pruned 1 tips.
+6: NetworkTrim: 0.00216 s
+6: SetState 18 (was 7)
+7: Pruned 6 tips.
+3: Pruned 4 tips.
+3: NetworkTrim: 0.00225 s
+3: SetState 18 (was 7)
+7: NetworkTrim: 0.00225 s
+7: SetState 18 (was 7)
+0: Pruned 5 tips.
+0: NetworkTrim: 0.00226 s
+2: Pruned 1 tips.
+2: NetworkTrim: 0.00232 s
+2: SetState 18 (was 7)
+5: Pruned 3 tips.
+5: NetworkTrim: 0.00233 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+4: SetState 8 (was 18)
+2: SetState 8 (was 18)
+1: SetState 8 (was 18)
+7: SetState 8 (was 18)
+6: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 23 marked k-mer.
+7: removeMarked: 0.00793 s
+3: Removed 17 marked k-mer.
+3: removeMarked: 0.00794 s
+3: SetState 18 (was 8)
+7: SetState 18 (was 8)
+1: Removed 15 marked k-mer.
+1: removeMarked: 0.00797 s
+1: SetState 18 (was 8)
+0: Removed 20 marked k-mer.
+0: removeMarked: 0.00802 s
+4: Removed 19 marked k-mer.
+4: removeMarked: 0.00807 s
+4: SetState 18 (was 8)
+6: Removed 12 marked k-mer.
+6: removeMarked: 0.00814 s
+6: SetState 18 (was 8)
+2: Removed 13 marked k-mer.
+2: removeMarked: 0.00821 s
+2: SetState 18 (was 8)
+5: Removed 21 marked k-mer.
+5: removeMarked: 0.0081 s
+5: SetState 18 (was 8)
+Pruned 140 k-mer in 23 tips.
+Pruning tips shorter than 16 bp...
+0: SetState 7 (was 8)
+2: SetState 7 (was 18)
+4: SetState 7 (was 18)
+1: SetState 7 (was 18)
+3: SetState 7 (was 18)
+6: SetState 7 (was 18)
+7: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 2 tips.
+4: NetworkTrim: 0.00227 s
+4: SetState 18 (was 7)
+1: Pruned 1 tips.
+1: NetworkTrim: 0.00243 s
+1: SetState 18 (was 7)
+6: Pruned 0 tips.
+6: NetworkTrim: 0.00248 s
+6: SetState 18 (was 7)
+7: Pruned 2 tips.
+7: NetworkTrim: 0.00256 s
+7: SetState 18 (was 7)
+3: Pruned 3 tips.
+3: NetworkTrim: 0.0026 s
+3: SetState 18 (was 7)
+0: Pruned 5 tips.
+0: NetworkTrim: 0.00271 s
+2: Pruned 7 tips.
+2: NetworkTrim: 0.00279 s
+2: SetState 18 (was 7)
+5: Pruned 4 tips.
+5: NetworkTrim: 0.00278 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+2: SetState 8 (was 18)
+4: SetState 8 (was 18)
+6: SetState 8 (was 18)
+7: SetState 8 (was 18)
+1: SetState 8 (was 18)
+3: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 19 marked k-mer.
+7: removeMarked: 0.00793 s
+7: SetState 18 (was 8)
+3: Removed 40 marked k-mer.
+1: Removed 36 marked k-mer.
+3: removeMarked: 0.00802 s
+1: removeMarked: 0.00804 s
+3: SetState 18 (was 8)
+1: SetState 18 (was 8)
+4: Removed 30 marked k-mer.
+4: removeMarked: 0.00807 s
+0: Removed 30 marked k-mer.
+0: removeMarked: 0.00808 s
+4: SetState 18 (was 8)
+6: Removed 40 marked k-mer.
+6: removeMarked: 0.00812 s
+6: SetState 18 (was 8)
+2: Removed 47 marked k-mer.
+2: removeMarked: 0.00823 s
+2: SetState 18 (was 8)
+5: Removed 36 marked k-mer.
+5: removeMarked: 0.00816 s
+5: SetState 18 (was 8)
+Pruned 278 k-mer in 24 tips.
+Pruning tips shorter than 25 bp...
+0: SetState 7 (was 8)
+2: SetState 7 (was 18)
+6: SetState 7 (was 18)
+1: SetState 7 (was 18)
+4: SetState 7 (was 18)
+3: SetState 7 (was 18)
+7: SetState 7 (was 18)
+5: SetState 7 (was 18)
+1: Pruned 1 tips.
+1: NetworkTrim: 0.0025 s
+1: SetState 18 (was 7)
+4: Pruned 0 tips.
+4: NetworkTrim: 0.00257 s
+4: SetState 18 (was 7)
+2: Pruned 2 tips.
+2: NetworkTrim: 0.00271 s
+2: SetState 18 (was 7)
+6: Pruned 1 tips.
+6: NetworkTrim: 0.00272 s
+6: SetState 18 (was 7)
+3: Pruned 0 tips.
+3: NetworkTrim: 0.00277 s
+3: SetState 18 (was 7)
+7: Pruned 0 tips.
+7: NetworkTrim: 0.00281 s
+7: SetState 18 (was 7)
+0: Pruned 0 tips.
+0: NetworkTrim: 0.00287 s
+5: Pruned 1 tips.
+5: NetworkTrim: 0.00298 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+4: SetState 8 (was 18)
+2: SetState 8 (was 18)
+7: SetState 8 (was 18)
+1: SetState 8 (was 18)
+6: SetState 8 (was 18)
+5: SetState 8 (was 18)
+3: Removed 10 marked k-mer.
+3: removeMarked: 0.00792 s
+7: Removed 13 marked k-mer.
+7: removeMarked: 0.00792 s
+7: SetState 18 (was 8)
+3: SetState 18 (was 8)
+0: Removed 7 marked k-mer.
+0: removeMarked: 0.00799 s
+1: Removed 11 marked k-mer.
+1: removeMarked: 0.00803 s
+1: SetState 18 (was 8)
+4: Removed 15 marked k-mer.
+4: removeMarked: 0.00809 s
+4: SetState 18 (was 8)
+2: Removed 11 marked k-mer.
+2: removeMarked: 0.0082 s
+2: SetState 18 (was 8)
+5: Removed 13 marked k-mer.
+5: removeMarked: 0.00809 s
+6: Removed 13 marked k-mer.
+6: removeMarked: 0.00837 s
+6: SetState 18 (was 8)
+5: SetState 18 (was 8)
+Pruned 93 k-mer in 5 tips.
+Pruning tips shorter than 25 bp...
+0: SetState 7 (was 8)
+2: SetState 7 (was 18)
+1: SetState 7 (was 18)
+3: SetState 7 (was 18)
+6: SetState 7 (was 18)
+4: SetState 7 (was 18)
+7: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 0 tips.
+4: NetworkTrim: 0.00237 s
+4: SetState 18 (was 7)
+1: Pruned 0 tips.
+1: NetworkTrim: 0.00254 s
+1: SetState 18 (was 7)
+2: Pruned 0 tips.
+2: NetworkTrim: 0.00264 s
+2: SetState 18 (was 7)
+6: Pruned 0 tips.
+6: NetworkTrim: 0.00268 s
+6: SetState 18 (was 7)
+3: Pruned 0 tips.
+3: NetworkTrim: 0.00273 s
+3: SetState 18 (was 7)
+7: Pruned 0 tips.
+7: NetworkTrim: 0.00282 s
+7: SetState 18 (was 7)
+0: Pruned 0 tips.
+0: NetworkTrim: 0.00288 s
+5: Pruned 0 tips.
+5: NetworkTrim: 0.00293 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+1: SetState 8 (was 18)
+6: SetState 8 (was 18)
+2: SetState 8 (was 18)
+3: SetState 8 (was 18)
+4: SetState 8 (was 18)
+7: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: removeMarked: 0.0079 s
+7: SetState 18 (was 8)
+3: removeMarked: 0.00792 s
+3: SetState 18 (was 8)
+1: removeMarked: 0.00794 s
+1: SetState 18 (was 8)
+4: removeMarked: 0.00803 s
+4: SetState 18 (was 8)
+0: removeMarked: 0.00804 s
+6: removeMarked: 0.00806 s
+6: SetState 18 (was 8)
+5: removeMarked: 0.00804 s
+2: removeMarked: 0.00818 s
+2: SetState 18 (was 8)
+5: SetState 18 (was 8)
+Pruned 92 tips in 6 rounds.
+0: SetState 9 (was 8)
+0: SetState 13 (was 9)
+Marking ambiguous branches...
+3: SetState 13 (was 18)
+6: SetState 13 (was 18)
+2: SetState 13 (was 18)
+7: SetState 13 (was 18)
+1: SetState 13 (was 18)
+4: SetState 13 (was 18)
+5: SetState 13 (was 18)
+7: Marked 4433 edges of 2203 ambiguous vertices.
+7: markAmbiguous: 0.0177 s
+7: SetState 18 (was 13)
+4: Marked 4674 edges of 2320 ambiguous vertices.
+4: markAmbiguous: 0.0181 s
+6: Marked 4468 edges of 2215 ambiguous vertices.
+6: markAmbiguous: 0.0182 s
+1: Marked 4425 edges of 2193 ambiguous vertices.
+1: markAmbiguous: 0.0182 s
+4: SetState 18 (was 13)
+6: SetState 18 (was 13)
+1: SetState 18 (was 13)
+0: Marked 4540 edges of 2253 ambiguous vertices.
+0: markAmbiguous: 0.0184 s
+2: Marked 4222 edges of 2094 ambiguous vertices.
+2: markAmbiguous: 0.0186 s
+2: SetState 18 (was 13)
+5: Marked 4541 edges of 2253 ambiguous vertices.
+5: markAmbiguous: 0.0184 s
+3: Marked 4483 edges of 2224 ambiguous vertices.
+3: markAmbiguous: 0.0187 s
+3: SetState 18 (was 13)
+5: SetState 18 (was 13)
+Marked 17755 ambiguous branches.
+Removing low-coverage contigs (mean k-mer coverage < 2.24)...
+0: SetState 9 (was 13)
+1: SetState 9 (was 18)
+1: cleanup: 0 s
+7: SetState 9 (was 18)
+7: cleanup: 0 s
+3: SetState 9 (was 18)
+3: cleanup: 1e-06 s
+6: SetState 9 (was 18)
+6: cleanup: 0 s
+0: cleanup: 1e-06 s
+2: SetState 9 (was 18)
+2: cleanup: 0 s
+4: SetState 9 (was 18)
+4: cleanup: 1e-06 s
+5: SetState 9 (was 18)
+5: cleanup: 1e-06 s
+0: Hash load: 54568 / 262144 = 0.208 using 11.8 MB
+1: Hash load: 54520 / 262144 = 0.208 using 12 MB
+7: Hash load: 54149 / 262144 = 0.207 using 11.8 MB
+2: Hash load: 55058 / 262144 = 0.21 using 11.9 MB
+6: Hash load: 55033 / 262144 = 0.21 using 11.9 MB
+4: Hash load: 55171 / 262144 = 0.21 using 11.9 MB
+3: Hash load: 54232 / 262144 = 0.207 using 11.8 MB
+5: Hash load: 55076 / 262144 = 0.21 using 11.9 MB
+1: Found 53279 k-mer in 3099 contigs before removing low-coverage contigs.
+Removed 28065 k-mer in 1143 low-coverage contigs.
+1: NetworkAssembly: 0.317 s
+1: SetState 18 (was 9)
+2: Found 52871 k-mer in 3072 contigs before removing low-coverage contigs.
+Removed 28365 k-mer in 1157 low-coverage contigs.
+2: NetworkAssembly: 0.331 s
+2: SetState 18 (was 9)
+0: Found 55187 k-mer in 3160 contigs before removing low-coverage contigs.
+Removed 29454 k-mer in 1192 low-coverage contigs.
+0: NetworkAssembly: 0.332 s
+7: Found 53463 k-mer in 3057 contigs before removing low-coverage contigs.
+Removed 28107 k-mer in 1149 low-coverage contigs.
+7: NetworkAssembly: 0.333 s
+7: SetState 18 (was 9)
+6: Found 56478 k-mer in 3299 contigs before removing low-coverage contigs.
+Removed 30646 k-mer in 1265 low-coverage contigs.
+6: NetworkAssembly: 0.338 s
+6: SetState 18 (was 9)
+3: Found 56213 k-mer in 3139 contigs before removing low-coverage contigs.
+Removed 29078 k-mer in 1173 low-coverage contigs.
+3: NetworkAssembly: 0.339 s
+3: SetState 18 (was 9)
+5: Found 55711 k-mer in 3206 contigs before removing low-coverage contigs.
+Removed 29244 k-mer in 1200 low-coverage contigs.
+5: NetworkAssembly: 0.345 s
+5: SetState 18 (was 9)
+4: Found 54599 k-mer in 3195 contigs before removing low-coverage contigs.
+Removed 28878 k-mer in 1188 low-coverage contigs.
+4: NetworkAssembly: 0.347 s
+4: SetState 18 (was 9)
+0: SetState 10 (was 9)
+6: SetState 10 (was 18)
+4: SetState 10 (was 18)
+1: SetState 10 (was 18)
+2: SetState 10 (was 18)
+3: SetState 10 (was 18)
+7: SetState 10 (was 18)
+5: SetState 10 (was 18)
+Found 437801 k-mer in 25227 contigs before removing low-coverage contigs.
+Removed 231837 k-mer in 9467 low-coverage contigs.
+0: SetState 14 (was 10)
+Splitting ambiguous branches...
+3: SetState 18 (was 10)
+3: SetState 14 (was 18)
+5: SetState 18 (was 10)
+6: SetState 18 (was 10)
+6: SetState 14 (was 18)
+4: SetState 18 (was 10)
+4: SetState 14 (was 18)
+1: SetState 18 (was 10)
+1: SetState 14 (was 18)
+2: SetState 18 (was 10)
+2: SetState 14 (was 18)
+7: SetState 18 (was 10)
+7: SetState 14 (was 18)
+5: SetState 14 (was 18)
+7: Split 2300 ambigiuous branches.
+7: splitAmbiguous: 0.00682 s
+1: Split 2344 ambigiuous branches.
+1: splitAmbiguous: 0.00684 s
+7: SetState 18 (was 14)
+1: SetState 18 (was 14)
+6: Split 2424 ambigiuous branches.
+6: splitAmbiguous: 0.00701 s
+6: SetState 18 (was 14)
+2: Split 2350 ambigiuous branches.
+2: splitAmbiguous: 0.00709 s
+2: SetState 18 (was 14)
+4: Split 2391 ambigiuous branches.
+4: splitAmbiguous: 0.00715 s
+4: SetState 18 (was 14)
+0: Split 2377 ambigiuous branches.
+0: splitAmbiguous: 0.00725 s
+3: Split 2348 ambigiuous branches.
+3: splitAmbiguous: 0.00735 s
+3: SetState 18 (was 14)
+5: Split 2363 ambigiuous branches.
+5: splitAmbiguous: 0.00719 s
+5: SetState 18 (was 14)
+Split 18897 ambiguous branches.
+0: SetState 15 (was 14)
+3: SetState 15 (was 18)
+1: SetState 15 (was 18)
+2: SetState 15 (was 18)
+6: SetState 15 (was 18)
+4: SetState 15 (was 18)
+7: SetState 15 (was 18)
+5: SetState 15 (was 18)
+7: cleanup: 0 s
+0: cleanup: 1e-06 s
+1: cleanup: 1e-06 s
+4: cleanup: 0 s
+2: cleanup: 0 s
+6: cleanup: 0 s
+3: cleanup: 1e-06 s
+5: cleanup: 1e-06 s
+0: Hash load: 25750 / 65536 = 0.393 using 11.8 MB
+1: Hash load: 25580 / 65536 = 0.39 using 12 MB
+7: Hash load: 25387 / 65536 = 0.387 using 11.8 MB
+2: Hash load: 25855 / 65536 = 0.395 using 11.9 MB
+6: Hash load: 26012 / 65536 = 0.397 using 11.9 MB
+4: Hash load: 26020 / 65536 = 0.397 using 11.9 MB
+3: Hash load: 25477 / 65536 = 0.389 using 11.8 MB
+5: Hash load: 25889 / 65536 = 0.395 using 11.9 MB
+7: SetState 18 (was 15)
+4: SetState 18 (was 15)
+1: SetState 18 (was 15)
+2: SetState 18 (was 15)
+3: SetState 18 (was 15)
+Removed 231837 marked k-mer.
+0: SetState 4 (was 15)
+Eroding tips...
+0: SetState 4 (was 4)
+6: SetState 18 (was 15)
+3: SetState 4 (was 18)
+6: SetState 4 (was 18)
+7: SetState 4 (was 18)
+4: SetState 4 (was 18)
+1: SetState 4 (was 18)
+2: SetState 4 (was 18)
+5: SetState 18 (was 15)
+5: SetState 4 (was 18)
+7: Eroded 58 tips.
+7: Erode: 0.00365 s
+7: SetState 5 (was 4)
+3: Eroded 60 tips.
+3: Erode: 0.00371 s
+3: SetState 5 (was 4)
+1: Eroded 54 tips.
+1: Erode: 0.00374 s
+1: SetState 5 (was 4)
+4: Eroded 73 tips.
+4: Erode: 0.00379 s
+4: SetState 5 (was 4)
+0: Eroded 79 tips.
+0: Erode: 0.00384 s
+2: Eroded 112 tips.
+2: Erode: 0.00387 s
+2: SetState 5 (was 4)
+5: Eroded 108 tips.
+5: Erode: 0.00384 s
+5: SetState 5 (was 4)
+6: Eroded 131 tips.
+6: Erode: 0.00389 s
+6: SetState 5 (was 4)
+0: SetState 6 (was 5)
+6: SetState 6 (was 5)
+2: SetState 6 (was 5)
+1: SetState 6 (was 5)
+3: SetState 6 (was 5)
+7: SetState 6 (was 5)
+4: SetState 6 (was 5)
+5: SetState 6 (was 5)
+7: completeOperation: 0.000973 s
+7: Eroded 291 tips.
+5: completeOperation: 0.000872 s
+0: completeOperation: 0.00099 s
+0: Eroded 304 tips.
+4: completeOperation: 0.000972 s
+4: Eroded 313 tips.
+6: completeOperation: 0.00098 s
+6: Eroded 273 tips.
+2: completeOperation: 0.00098 s
+2: Eroded 312 tips.
+1: completeOperation: 0.000978 s
+1: Eroded 318 tips.
+3: completeOperation: 0.000975 s
+3: Eroded 359 tips.
+5: Eroded 273 tips.
+3: cleanup: 1e-06 s
+Eroded 3118 tips.
+0: cleanup: 0 s
+4: cleanup: 1e-06 s
+6: cleanup: 0 s
+2: cleanup: 0 s
+1: cleanup: 0 s
+7: cleanup: 0 s
+5: cleanup: 0 s
+7: Hash load: 25038 / 65536 = 0.382 using 11.8 MB
+2: Hash load: 25431 / 65536 = 0.388 using 11.9 MB
+1: Hash load: 25208 / 65536 = 0.385 using 12 MB
+0: Hash load: 25367 / 65536 = 0.387 using 11.8 MB
+6: Hash load: 25608 / 65536 = 0.391 using 11.9 MB
+4: Hash load: 25634 / 65536 = 0.391 using 11.9 MB
+3: Hash load: 25058 / 65536 = 0.382 using 11.8 MB
+5: Hash load: 25508 / 65536 = 0.389 using 11.9 MB
+5: SetState 18 (was 6)
+3: SetState 18 (was 6)
+4: SetState 18 (was 6)
+1: SetState 18 (was 6)
+6: SetState 18 (was 6)
+0: SetState 18 (was 6)
+0: SetState 7 (was 18)
+Pruning tips shorter than 1 bp...
+0: SetState 7 (was 7)
+7: SetState 18 (was 6)
+7: SetState 7 (was 18)
+2: SetState 18 (was 6)
+2: SetState 7 (was 18)
+4: SetState 7 (was 18)
+1: SetState 7 (was 18)
+6: SetState 7 (was 18)
+3: SetState 7 (was 18)
+5: SetState 7 (was 18)
+2: Pruned 1 tips.
+2: NetworkTrim: 0.00145 s
+2: SetState 18 (was 7)
+1: Pruned 2 tips.
+1: NetworkTrim: 0.00147 s
+1: SetState 18 (was 7)
+0: Pruned 1 tips.
+0: NetworkTrim: 0.00151 s
+4: Pruned 1 tips.
+7: Pruned 0 tips.
+6: Pruned 0 tips.
+6: NetworkTrim: 0.00156 s
+6: SetState 18 (was 7)
+7: NetworkTrim: 0.00157 s
+7: SetState 18 (was 7)
+4: NetworkTrim: 0.00156 s
+4: SetState 18 (was 7)
+3: Pruned 2 tips.
+3: NetworkTrim: 0.00163 s
+3: SetState 18 (was 7)
+5: Pruned 2 tips.
+5: NetworkTrim: 0.0016 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+4: SetState 8 (was 18)
+6: SetState 8 (was 18)
+3: SetState 8 (was 18)
+2: SetState 8 (was 18)
+1: SetState 8 (was 18)
+7: SetState 8 (was 18)
+5: SetState 8 (was 18)
+1: Removed 2 marked k-mer.
+1: removeMarked: 0.00383 s
+1: SetState 18 (was 8)
+6: removeMarked: 0.00387 s
+6: SetState 18 (was 8)
+2: Removed 1 marked k-mer.
+4: Removed 1 marked k-mer.
+4: removeMarked: 0.00392 s
+4: SetState 18 (was 8)
+2: removeMarked: 0.00393 s
+2: SetState 18 (was 8)
+5: Removed 2 marked k-mer.
+0: Removed 1 marked k-mer.
+0: removeMarked: 0.00402 s
+5: removeMarked: 0.00386 s
+5: SetState 18 (was 8)
+3: Removed 2 marked k-mer.
+3: removeMarked: 0.00409 s
+3: SetState 18 (was 8)
+7: removeMarked: 0.00428 s
+7: SetState 18 (was 8)
+Pruned 9 k-mer in 9 tips.
+Pruning tips shorter than 2 bp...
+0: SetState 7 (was 8)
+4: SetState 7 (was 18)
+1: SetState 7 (was 18)
+3: SetState 7 (was 18)
+6: SetState 7 (was 18)
+2: SetState 7 (was 18)
+7: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 2 tips.
+4: NetworkTrim: 0.00397 s
+4: SetState 18 (was 7)
+1: Pruned 3 tips.
+1: NetworkTrim: 0.00336 s
+1: SetState 18 (was 7)
+3: Pruned 1 tips.
+3: NetworkTrim: 0.00357 s
+3: SetState 18 (was 7)
+2: Pruned 2 tips.
+2: NetworkTrim: 0.0039 s
+2: SetState 18 (was 7)
+0: Pruned 0 tips.
+0: NetworkTrim: 0.00371 s
+5: Pruned 7 tips.
+6: Pruned 1 tips.
+6: NetworkTrim: 0.00385 s
+6: SetState 18 (was 7)
+5: NetworkTrim: 0.00361 s
+5: SetState 18 (was 7)
+7: Pruned 1 tips.
+7: NetworkTrim: 0.00548 s
+7: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+2: SetState 8 (was 18)
+7: SetState 8 (was 18)
+4: SetState 8 (was 18)
+1: SetState 8 (was 18)
+6: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 2 marked k-mer.
+7: removeMarked: 0.00375 s
+7: SetState 18 (was 8)
+1: Removed 3 marked k-mer.
+1: removeMarked: 0.00383 s
+1: SetState 18 (was 8)
+6: Removed 1 marked k-mer.
+6: removeMarked: 0.00393 s
+2: Removed 3 marked k-mer.
+2: removeMarked: 0.00394 s
+4: Removed 2 marked k-mer.
+4: removeMarked: 0.00394 s
+4: SetState 18 (was 8)
+6: SetState 18 (was 8)
+2: SetState 18 (was 8)
+3: Removed 1 marked k-mer.
+3: removeMarked: 0.00397 s
+3: SetState 18 (was 8)
+0: Removed 1 marked k-mer.
+0: removeMarked: 0.00403 s
+5: Removed 7 marked k-mer.
+5: removeMarked: 0.00388 s
+5: SetState 18 (was 8)
+Pruned 20 k-mer in 17 tips.
+Pruning tips shorter than 4 bp...
+0: SetState 7 (was 8)
+1: SetState 7 (was 18)
+6: SetState 7 (was 18)
+7: SetState 7 (was 18)
+3: SetState 7 (was 18)
+2: SetState 7 (was 18)
+4: SetState 7 (was 18)
+5: SetState 7 (was 18)
+2: Pruned 8 tips.
+2: NetworkTrim: 0.00295 s
+2: SetState 18 (was 7)
+0: Pruned 2 tips.
+0: NetworkTrim: 0.00304 s
+1: Pruned 5 tips.
+1: NetworkTrim: 0.00309 s
+1: SetState 18 (was 7)
+4: Pruned 6 tips.
+4: NetworkTrim: 0.00314 s
+4: SetState 18 (was 7)
+6: Pruned 2 tips.
+6: NetworkTrim: 0.0033 s
+6: SetState 18 (was 7)
+7: Pruned 8 tips.
+7: NetworkTrim: 0.00336 s
+7: SetState 18 (was 7)
+3: Pruned 6 tips.
+3: NetworkTrim: 0.00344 s
+3: SetState 18 (was 7)
+5: Pruned 5 tips.
+5: NetworkTrim: 0.0033 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+4: SetState 8 (was 18)
+6: SetState 8 (was 18)
+7: SetState 8 (was 18)
+3: SetState 8 (was 18)
+1: SetState 8 (was 18)
+2: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 12 marked k-mer.
+7: removeMarked: 0.00376 s
+7: SetState 18 (was 8)
+1: Removed 7 marked k-mer.
+1: removeMarked: 0.00383 s
+1: SetState 18 (was 8)
+6: Removed 8 marked k-mer.
+6: removeMarked: 0.00388 s
+6: SetState 18 (was 8)
+4: Removed 15 marked k-mer.
+4: removeMarked: 0.00394 s
+4: SetState 18 (was 8)
+3: Removed 12 marked k-mer.
+3: removeMarked: 0.00398 s
+2: Removed 13 marked k-mer.
+3: SetState 18 (was 8)
+2: removeMarked: 0.004 s
+2: SetState 18 (was 8)
+5: Removed 10 marked k-mer.
+5: removeMarked: 0.00388 s
+5: SetState 18 (was 8)
+0: Removed 9 marked k-mer.
+0: removeMarked: 0.00449 s
+Pruned 86 k-mer in 42 tips.
+Pruning tips shorter than 8 bp...
+0: SetState 7 (was 8)
+6: SetState 7 (was 18)
+1: SetState 7 (was 18)
+2: SetState 7 (was 18)
+4: SetState 7 (was 18)
+7: SetState 7 (was 18)
+3: SetState 7 (was 18)
+5: SetState 7 (was 18)
+4: Pruned 4 tips.
+4: NetworkTrim: 0.00632 s
+4: SetState 18 (was 7)
+2: Pruned 6 tips.
+2: NetworkTrim: 0.00583 s
+2: SetState 18 (was 7)
+7: Pruned 8 tips.
+3: Pruned 11 tips.
+3: NetworkTrim: 0.00627 s
+0: Pruned 7 tips.
+0: NetworkTrim: 0.00605 s
+6: Pruned 5 tips.
+6: NetworkTrim: 0.00608 s
+7: NetworkTrim: 0.00613 s
+7: SetState 18 (was 7)
+6: SetState 18 (was 7)
+3: SetState 18 (was 7)
+5: Pruned 9 tips.
+5: NetworkTrim: 0.00612 s
+5: SetState 18 (was 7)
+1: Pruned 8 tips.
+1: NetworkTrim: 0.00799 s
+1: SetState 18 (was 7)
+1: SetState 8 (was 18)
+Sweeping...
+0: SetState 8 (was 7)
+4: SetState 8 (was 18)
+3: SetState 8 (was 18)
+7: SetState 8 (was 18)
+6: SetState 8 (was 18)
+2: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 28 marked k-mer.
+7: removeMarked: 0.00357 s
+7: SetState 18 (was 8)
+6: Removed 34 marked k-mer.
+6: removeMarked: 0.0037 s
+1: Removed 30 marked k-mer.
+1: removeMarked: 0.0037 s
+1: SetState 18 (was 8)
+6: SetState 18 (was 8)
+4: Removed 31 marked k-mer.
+4: removeMarked: 0.00375 s
+4: SetState 18 (was 8)
+3: Removed 34 marked k-mer.
+3: removeMarked: 0.00379 s
+0: Removed 28 marked k-mer.
+0: removeMarked: 0.00381 s
+3: SetState 18 (was 8)
+2: Removed 26 marked k-mer.
+2: removeMarked: 0.00398 s
+2: SetState 18 (was 8)
+5: Removed 34 marked k-mer.
+5: removeMarked: 0.00395 s
+5: SetState 18 (was 8)
+Pruned 245 k-mer in 58 tips.
+Pruning tips shorter than 16 bp...
+0: SetState 7 (was 8)
+6: SetState 7 (was 18)
+7: SetState 7 (was 18)
+4: SetState 7 (was 18)
+2: SetState 7 (was 18)
+1: SetState 7 (was 18)
+3: SetState 7 (was 18)
+5: SetState 7 (was 18)
+1: Pruned 7 tips.
+1: NetworkTrim: 0.00839 s
+1: SetState 18 (was 7)
+2: Pruned 7 tips.
+2: NetworkTrim: 0.00847 s
+2: SetState 18 (was 7)
+4: Pruned 10 tips.
+4: NetworkTrim: 0.00866 s
+4: SetState 18 (was 7)
+0: Pruned 12 tips.
+0: NetworkTrim: 0.00876 s
+6: Pruned 11 tips.
+6: NetworkTrim: 0.00914 s
+6: SetState 18 (was 7)
+3: Pruned 13 tips.
+3: NetworkTrim: 0.00928 s
+7: Pruned 10 tips.
+7: NetworkTrim: 0.00929 s
+3: SetState 18 (was 7)
+7: SetState 18 (was 7)
+5: Pruned 10 tips.
+5: NetworkTrim: 0.00922 s
+5: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+4: SetState 8 (was 18)
+3: SetState 8 (was 18)
+2: SetState 8 (was 18)
+1: SetState 8 (was 18)
+7: SetState 8 (was 18)
+6: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 84 marked k-mer.
+7: removeMarked: 0.0036 s
+7: SetState 18 (was 8)
+1: Removed 86 marked k-mer.
+1: removeMarked: 0.00368 s
+1: SetState 18 (was 8)
+6: Removed 91 marked k-mer.
+6: removeMarked: 0.00373 s
+6: SetState 18 (was 8)
+2: Removed 83 marked k-mer.
+2: removeMarked: 0.00379 s
+4: Removed 98 marked k-mer.
+4: removeMarked: 0.0038 s
+2: SetState 18 (was 8)
+4: SetState 18 (was 8)
+3: Removed 110 marked k-mer.
+3: removeMarked: 0.00386 s
+3: SetState 18 (was 8)
+0: Removed 97 marked k-mer.
+0: removeMarked: 0.0039 s
+5: Removed 88 marked k-mer.
+5: removeMarked: 0.00377 s
+5: SetState 18 (was 8)
+Pruned 737 k-mer in 80 tips.
+Pruning tips shorter than 25 bp...
+0: SetState 7 (was 8)
+1: SetState 7 (was 18)
+2: SetState 7 (was 18)
+6: SetState 7 (was 18)
+7: SetState 7 (was 18)
+3: SetState 7 (was 18)
+4: SetState 7 (was 18)
+5: SetState 7 (was 18)
+2: Pruned 7 tips.
+2: NetworkTrim: 0.0125 s
+2: SetState 18 (was 7)
+4: Pruned 1 tips.
+4: NetworkTrim: 0.0127 s
+4: SetState 18 (was 7)
+0: Pruned 9 tips.
+0: NetworkTrim: 0.0127 s
+1: Pruned 4 tips.
+1: NetworkTrim: 0.0131 s
+1: SetState 18 (was 7)
+7: Pruned 6 tips.
+7: NetworkTrim: 0.0139 s
+7: SetState 18 (was 7)
+6: Pruned 13 tips.
+6: NetworkTrim: 0.0139 s
+6: SetState 18 (was 7)
+5: Pruned 6 tips.
+5: NetworkTrim: 0.014 s
+5: SetState 18 (was 7)
+3: Pruned 7 tips.
+3: NetworkTrim: 0.016 s
+3: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+1: SetState 8 (was 18)
+2: SetState 8 (was 18)
+4: SetState 8 (was 18)
+6: SetState 8 (was 18)
+7: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: Removed 103 marked k-mer.
+7: removeMarked: 0.00361 s
+7: SetState 18 (was 8)
+1: Removed 91 marked k-mer.
+1: removeMarked: 0.00368 s
+1: SetState 18 (was 8)
+6: Removed 99 marked k-mer.
+6: removeMarked: 0.00373 s
+6: SetState 18 (was 8)
+4: Removed 94 marked k-mer.
+4: removeMarked: 0.00378 s
+2: Removed 104 marked k-mer.
+2: removeMarked: 0.0038 s
+4: SetState 18 (was 8)
+3: Removed 80 marked k-mer.
+3: removeMarked: 0.00381 s
+2: SetState 18 (was 8)
+3: SetState 18 (was 8)
+0: Removed 97 marked k-mer.
+0: removeMarked: 0.00389 s
+5: Removed 100 marked k-mer.
+5: removeMarked: 0.00377 s
+5: SetState 18 (was 8)
+Pruned 768 k-mer in 53 tips.
+Pruning tips shorter than 25 bp...
+0: SetState 7 (was 8)
+2: SetState 7 (was 18)
+3: SetState 7 (was 18)
+6: SetState 7 (was 18)
+1: SetState 7 (was 18)
+7: SetState 7 (was 18)
+4: SetState 7 (was 18)
+5: SetState 7 (was 18)
+2: Pruned 0 tips.
+2: NetworkTrim: 0.011 s
+2: SetState 18 (was 7)
+0: Pruned 0 tips.
+0: NetworkTrim: 0.0113 s
+1: Pruned 0 tips.
+1: NetworkTrim: 0.0123 s
+1: SetState 18 (was 7)
+6: Pruned 0 tips.
+6: NetworkTrim: 0.0123 s
+6: SetState 18 (was 7)
+3: Pruned 0 tips.
+3: NetworkTrim: 0.0124 s
+3: SetState 18 (was 7)
+7: Pruned 0 tips.
+7: NetworkTrim: 0.0125 s
+7: SetState 18 (was 7)
+5: Pruned 0 tips.
+5: NetworkTrim: 0.0123 s
+5: SetState 18 (was 7)
+4: Pruned 0 tips.
+4: NetworkTrim: 0.0125 s
+4: SetState 18 (was 7)
+Sweeping...
+0: SetState 8 (was 7)
+3: SetState 8 (was 18)
+2: SetState 8 (was 18)
+7: SetState 8 (was 18)
+6: SetState 8 (was 18)
+1: SetState 8 (was 18)
+4: SetState 8 (was 18)
+5: SetState 8 (was 18)
+7: removeMarked: 0.00353 s
+7: SetState 18 (was 8)
+1: removeMarked: 0.00361 s
+1: SetState 18 (was 8)
+6: removeMarked: 0.00364 s
+6: SetState 18 (was 8)
+2: removeMarked: 0.0037 s
+2: SetState 18 (was 8)
+3: removeMarked: 0.00373 s
+3: SetState 18 (was 8)
+5: removeMarked: 0.00363 s
+0: removeMarked: 0.00378 s
+4: removeMarked: 0.00381 s
+4: SetState 18 (was 8)
+5: SetState 18 (was 8)
+Pruned 259 tips in 6 rounds.
+0: SetState 12 (was 8)
+Popping bubbles...
+0: SetState 11 (was 12)
+1: SetState 11 (was 18)
+2: SetState 11 (was 18)
+4: SetState 11 (was 18)
+6: SetState 11 (was 18)
+3: SetState 11 (was 18)
+7: SetState 11 (was 18)
+5: SetState 11 (was 18)
+2: Discovered 17 bubbles.
+2: NetworkDiscoverBubbles: 0.0118 s
+2: SetState 18 (was 11)
+3: Discovered 19 bubbles.
+3: NetworkDiscoverBubbles: 0.0123 s
+3: SetState 18 (was 11)
+1: Discovered 20 bubbles.
+1: NetworkDiscoverBubbles: 0.0123 s
+1: SetState 18 (was 11)
+4: Discovered 14 bubbles.
+4: NetworkDiscoverBubbles: 0.0131 s
+4: SetState 18 (was 11)
+7: Discovered 18 bubbles.
+7: NetworkDiscoverBubbles: 0.0132 s
+7: SetState 18 (was 11)
+0: Discovered 20 bubbles.
+0: NetworkDiscoverBubbles: 0.0137 s
+6: Discovered 32 bubbles.
+6: NetworkDiscoverBubbles: 0.0143 s
+6: SetState 18 (was 11)
+5: Discovered 22 bubbles.
+5: NetworkDiscoverBubbles: 0.0144 s
+5: SetState 18 (was 11)
+Discovered 162 bubbles.
+0: SetState 12 (was 11)
+0: Removed 19 bubbles.
+0: NetworkPopBubbles: 0.000597 s
+1: SetState 12 (was 18)
+1: Removed 17 bubbles.
+1: NetworkPopBubbles: 0.000546 s
+1: SetState 18 (was 12)
+2: SetState 12 (was 18)
+2: Removed 13 bubbles.
+2: NetworkPopBubbles: 0.000434 s
+2: SetState 18 (was 12)
+3: SetState 12 (was 18)
+3: Removed 10 bubbles.
+3: NetworkPopBubbles: 0.000455 s
+3: SetState 18 (was 12)
+4: SetState 12 (was 18)
+4: Removed 5 bubbles.
+4: NetworkPopBubbles: 0.00019 s
+4: SetState 18 (was 12)
+5: SetState 12 (was 18)
+5: Removed 8 bubbles.
+5: NetworkPopBubbles: 0.000263 s
+5: SetState 18 (was 12)
+6: SetState 12 (was 18)
+6: Removed 8 bubbles.
+6: NetworkPopBubbles: 0.000441 s
+6: SetState 18 (was 12)
+7: SetState 12 (was 18)
+7: Removed 1 bubbles.
+7: NetworkPopBubbles: 8.2e-05 s
+7: SetState 18 (was 12)
+Removed 81 bubbles.
+Removed 81 bubbles.
+0: SetState 13 (was 12)
+Marking ambiguous branches...
+7: SetState 13 (was 18)
+3: SetState 13 (was 18)
+4: SetState 13 (was 18)
+6: SetState 13 (was 18)
+1: SetState 13 (was 18)
+2: SetState 13 (was 18)
+5: SetState 13 (was 18)
+5: Marked 64 edges of 32 ambiguous vertices.
+5: markAmbiguous: 0.00666 s
+6: Marked 66 edges of 32 ambiguous vertices.
+6: markAmbiguous: 0.00672 s
+7: Marked 58 edges of 29 ambiguous vertices.
+7: markAmbiguous: 0.00673 s
+7: SetState 18 (was 13)
+6: SetState 18 (was 13)
+5: SetState 18 (was 13)
+1: Marked 57 edges of 28 ambiguous vertices.
+1: markAmbiguous: 0.0068 s
+1: SetState 18 (was 13)
+4: Marked 93 edges of 44 ambiguous vertices.
+4: markAmbiguous: 0.00686 s
+4: SetState 18 (was 13)
+0: Marked 74 edges of 37 ambiguous vertices.
+0: markAmbiguous: 0.0069 s
+2: Marked 54 edges of 27 ambiguous vertices.
+2: markAmbiguous: 0.00698 s
+2: SetState 18 (was 13)
+3: Marked 59 edges of 29 ambiguous vertices.
+3: markAmbiguous: 0.00717 s
+3: SetState 18 (was 13)
+Marked 258 ambiguous branches.
+0: SetState 16 (was 13)
+Assembling...
+7: SetState 16 (was 18)
+2: SetState 16 (was 18)
+1: SetState 16 (was 18)
+6: SetState 16 (was 18)
+3: SetState 16 (was 18)
+4: SetState 16 (was 18)
+5: SetState 16 (was 18)
+2: Assembled 20772 k-mer in 108 contigs.
+2: NetworkAssembly: 0.138 s
+2: SetState 18 (was 16)
+6: Assembled 25236 k-mer in 120 contigs.
+6: NetworkAssembly: 0.21 s
+6: SetState 18 (was 16)
+0: Assembled 23228 k-mer in 111 contigs.
+0: NetworkAssembly: 0.256 s
+4: Assembled 21016 k-mer in 129 contigs.
+4: NetworkAssembly: 0.256 s
+4: SetState 18 (was 16)
+1: Assembled 31217 k-mer in 112 contigs.
+1: NetworkAssembly: 0.303 s
+1: SetState 18 (was 16)
+7: Assembled 23128 k-mer in 115 contigs.
+7: NetworkAssembly: 0.35 s
+7: SetState 18 (was 16)
+5: Assembled 23553 k-mer in 101 contigs.
+5: NetworkAssembly: 0.401 s
+5: SetState 18 (was 16)
+3: Assembled 30389 k-mer in 111 contigs.
+3: NetworkAssembly: 0.443 s
+3: SetState 18 (was 16)
+0: SetState 17 (was 16)
+1: SetState 17 (was 18)
+6: SetState 17 (was 18)
+7: SetState 17 (was 18)
+4: SetState 17 (was 18)
+2: SetState 17 (was 18)
+5: SetState 17 (was 18)
+3: SetState 17 (was 18)
+1: SetState 19 (was 17)
+Assembled 198539 k-mer in 907 contigs.
+0: SetState 19 (was 17)
+6: SetState 19 (was 17)
+7: SetState 19 (was 17)
+4: SetState 19 (was 17)
+5: SetState 19 (was 17)
+2: SetState 19 (was 17)
+3: SetState 19 (was 17)
+2: Sent 39 control, 278711 packets, 1179993 messages, 33987167 bytes. Received 281042 packets, 1411803 messages, 39736130 bytes.
+7: Sent 39 control, 287438 packets, 1177392 messages, 33955983 bytes. Received 289703 packets, 1405665 messages, 39679709 bytes.
+5: Sent 39 control, 290103 packets, 1193537 messages, 34413240 bytes. Received 292440 packets, 1425930 messages, 40234317 bytes.
+1: Sent 39 control, 296407 packets, 1991026 messages, 54320680 bytes. Received 289498 packets, 1299964 messages, 37056491 bytes.
+6: Sent 39 control, 287942 packets, 1191293 messages, 34340759 bytes. Received 290237 packets, 1420602 messages, 40066454 bytes.
+4: Sent 39 control, 283066 packets, 1186976 messages, 34202867 bytes. Received 285400 packets, 1420541 messages, 40007966 bytes.
+3: Sent 39 control, 291347 packets, 1186840 messages, 34228224 bytes. Received 293601 packets, 1413092 messages, 39921702 bytes.
+0: Sent 371 control, 295947 packets, 1990613 messages, 54306643 bytes. Received 289040 packets, 1300073 messages, 37052794 bytes.
+1: Total: 2.57 s
+Concatenating fasta files to /path/to/testÏ/test-1.fa
+3: Total: 2.54 s
+6: Total: 2.59 s
+4: Total: 2.52 s
+5: Total: 2.57 s
+2: Total: 2.56 s
+7: Total: 2.59 s
+Concatenating fasta files to /path/to/test/test-bubbles.fa
+Done.
+0: Total: 2.59 s
+AdjList -vv   -k25 -m50 --dot /path/to/test/test-1.fa >/path/to/test/test-1.dot
+Reading `/path/to/test/test-1.fa'...
+Finding overlaps of exactly k-1 bp...
+V=1814 E=955 E/V=0.526
+Degree: █▂▁
+        01234
+0: 62% 1: 24% 2-4: 14% 5+: 0% max: 3
+abyss-filtergraph -vv --dot   -k25 -g /path/to/test/test-2.dot1 /path/to/test/test-1.dot /path/to/test/test-1.fa >/path/to/test/test-1.path
+Loading graph from file: /path/to/test/test-1.dot
+Graph stats before:
+V=1814 E=955 E/V=0.526
+Degree: █▂▁
+        01234
+0: 62% 1: 24% 2-4: 14% 5+: 0% max: 3
+Removing shim contigs from the graph...
+Pass 1: Checking 125 contigs.
+Pass 2: Checking 2 contigs.
+Shim removal stats:
+Removed: 53 Too Complex: 72 Tails: 617 Too Long: 164 Self Adjacent: 0 Parallel Edges: 0
+Reading `/path/to/test/test-1.fa'...
+Edge removal stats:
+Removed: 0
+Graph stats after:
+V=1706 E=844 E/V=0.495
+Degree: █▂_
+        01234
+0: 66% 1: 20% 2-4: 14% 5+: 0.059% max: 5
+MergeContigs -vv  -k25 -g /path/to/test/test-2.dot -o /path/to/test/test-2.fa /path/to/test/test-1.fa /path/to/test/test-2.dot1 /path/to/test/test-1.path
+Reading `/path/to/test/test-2.dot1'...
+Read 1706 vertices. Using 602 kB of memory.
+Reading `/path/to/test/test-1.fa'...
+Read 853 sequences. Using 872 kB of memory.
+Reading `/path/to/test/test-1.path'...
+Read 0 paths. Using 872 kB of memory.
+Writing `/path/to/test/test-2.dot'...
+V=1706 E=844 E/V=0.495
+Degree: █▂_
+        01234
+0: 66% 1: 20% 2-4: 14% 5+: 0.059% max: 5
+PopBubbles -vv --dot -j8 -k25  -p0.9  -g /path/to/test/test-3.dot /path/to/test/test-2.fa /path/to/test/test-2.dot >/path/to/test/test-2.path
+Reading `/path/to/test/test-2.dot'...
+V=1706 E=844 E/V=0.495
+Degree: █▂_
+        01234
+0: 66% 1: 20% 2-4: 14% 5+: 0.059% max: 5
+Reading `/path/to/test/test-2.fa'...
+55	58	0.93
+100	100	0.91
+77	77	0.95
+77	77	0.96
+77	77	0.95
+81	81	0.94
+42	43	0.98
+102	118	0.86	(dissimilar)
+46	47	0.98
+97	97	0.96
+132	133	0.93
+127	127	0.95
+76	80	0.93
+85	85	0.96
+71	72	0.96
+86	86	0.93
+62	66	0.91
+48	49	0.98
+58	88	0.66	(dissimilar)
+89	89	0.92
+110	111	0.91
+100	100	0.91
+99	99	0.95
+48	50	0.96
+46	55	0.84	(dissimilar)
+46	47	0.98
+42	43	0.98
+81	81	0.94
+77	77	0.95
+46	55	0.84	(dissimilar)
+48	50	0.96
+99	99	0.95
+102	118	0.86	(dissimilar)
+110	111	0.91
+77	77	0.95
+55	58	0.93
+127	127	0.95
+132	133	0.93
+97	97	0.96
+89	89	0.92
+58	88	0.66	(dissimilar)
+48	49	0.98
+62	66	0.91
+86	86	0.93
+71	72	0.96
+85	85	0.96
+76	80	0.93
+77	77	0.96
+Bubbles: 30 Popped: 21 Scaffolds: 0 Complex: 6 Too long: 0 Too many: 0 Dissimilar: 3
+V=1580 E=676 E/V=0.428
+Degree: █▁_
+        01234
+0: 71% 1: 16% 2-4: 12% 5+: 0.063% max: 5
+MergeContigs -vv  -k25 -o /path/to/test/test-3.fa /path/to/test/test-2.fa /path/to/test/test-2.dot /path/to/test/test-2.path
+Reading `/path/to/test/test-2.dot'...
+Read 1706 vertices. Using 602 kB of memory.
+Reading `/path/to/test/test-2.fa'...
+Read 853 sequences. Using 872 kB of memory.
+Reading `/path/to/test/test-2.path'...
+Read 34 paths. Using 872 kB of memory.
+The minimum coverage of single-end contigs is 2.28.
+The minimum coverage of merged contigs is 2.94118.
+Consider increasing the coverage threshold parameter, c, to 2.94118.
+n	n:200	L50	min	N80	N50	N20	E-size	max	sum	name
+790	357	97	201	324	535	981	701	2260	175032	/path/to/test/test-3.fa
+awk '!/^>/ {x[">" $1]=1; next} {getline s} $1 in x {print $0 "\n" s}' \
+		/path/to/test/test-2.path /path/to/test/test-1.fa >/path/to/test/test-indel.fa
+ln -sf /path/to/test/test-3.fa /path/to/test/test-unitigs.fa
+abyss-map -vv  -j8 -l40    /path/to/test-data/reads1.fastq /path/to/test-data/reads2.fastq /path/to/test/test-3.fa \
+		|abyss-fixmate -vv  -l40  -h /path/to/test/test-3.hist \
+		|sort -snk3 -k4 \
+		|DistanceEst -vv  -j8 -k25 -l40 -s1000 -n10   -o /path/to/test/test-3.dist /path/to/test/test-3.hist
+Reading `/path/to/test/test-3.fa'...
+Reading from standard input...
+Using 451 kB of memory and 570 B/sequence.
+Reading `/path/to/test/test-3.fa'...
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Read 227 kB in 790 contigs.
+Using 2.42 MB of memory and 10.7 B/bp.
+Read 19 alignments. Hash load: 5 / 8 = 0.625 using 459 kB.
+Mapped 26632 of 40000 reads (66.6%)
+Mapped 26618 of 40000 reads uniquely (66.5%)
+Read 40000 alignments
+Mateless       0
+Unaligned   2285  11.4%
+Singleton   8798  44%
+FR          2346  11.7%
+RF             0
+FF             0
+Different   6571  32.9%
+Total      20000
+FR Stats mean: 493.2 median: 492 sd: 48.73 n: 2315 min: 369 max: 648 ignored: 31
+    __ ▁▁▁_▁▁▁▃▃▃▂▄▄▄▅▆▆▆▇▆███▇▇█▆██▆▄▅▅▆▄▅▄▃▃▃▂▂▁▂▁_▁____
+Mate orientation FR: 2346 (100%) RF: 0 (0%)
+The library /path/to/test/test-3.hist is oriented forward-reverse (FR).
+Stats mean: 493.2 median: 492 sd: 48.73 n: 2315 min: 369 max: 648
+    __ ▁▁▁_▁▁▁▃▃▃▂▄▄▄▅▆▆▆▇▆███▇▇█▆██▆▄▅▅▆▄▅▄▃▃▃▂▂▁▂▁_▁____
+Minimum and maximum distance are set to -24 and 648 bp.
+Duplicate rate of spanning fragments: 0/534 (0%)
+Overlap -vv --dot   -k25 -g /path/to/test/test-4.dot -o /path/to/test/test-4.fa /path/to/test/test-3.fa /path/to/test/test-3.dot /path/to/test/test-3.dist
+172-	70+
+50+	702-	4	1
+233+	50+	4
+94+	385+
+805-	94+	9	1
+203+	668-	2	1
+899-	203+
+220+	717+
+404+	220+	22
+222+	763-
+604+	222+	3	1
+297+	465+	15	1
+358+	846+	22	1
+664-	358+	2	1
+906+	477+	4
+658+	619+
+638+	588-	11	1
+832-	719+	2
+759+	309-
+914-	911+	22	2
+905+	53+	23
+441+	905+	6
+digraph adj {
+graph [k=25]
+edge [d=-24]
+"0+" []
+"0-" []
+"1+" []
+"1-" []
+"2+" []
+"2-" []
+"3+" []
+"3-" []
+"4+" []
+"4-" []
+"5+" []
+"5-" []
+"6+" []
+"6-" []
+"7+" []
+"7-" []
+"8+" []
+"8-" []
+"9+" []
+"9-" []
+"10+" []
+"10-" []
+"11+" []
+"11-" []
+"12+" []
+"12-" []
+"13+" []
+"13-" []
+"16+" []
+"16-" []
+"17+" []
+"17-" []
+"18+" []
+"18-" []
+"19+" []
+"19-" []
+"20+" []
+"20-" []
+"21+" []
+"21-" []
+"22+" []
+"22-" []
+"23+" []
+"23-" []
+"24+" []
+"24-" []
+"28+" []
+"28-" []
+"29+" []
+"29-" []
+"30+" []
+"30-" []
+"32+" []
+"32-" []
+"33+" []
+"33-" []
+"34+" []
+"34-" []
+"35+" []
+"35-" []
+"36+" []
+"36-" []
+"37+" []
+"37-" []
+"38+" []
+"38-" []
+"40+" []
+"40-" []
+"41+" []
+"41-" []
+"43+" []
+"43-" []
+"44+" []
+"44-" []
+"45+" []
+"45-" []
+"46+" []
+"46-" []
+"47+" []
+"47-" []
+"48+" []
+"48-" []
+"50+" []
+"50-" []
+"51+" []
+"51-" []
+"52+" []
+"52-" []
+"53+" []
+"53-" []
+"54+" []
+"54-" []
+"56+" []
+"56-" []
+"57+" []
+"57-" []
+"58+" []
+"58-" []
+"59+" []
+"59-" []
+"61+" []
+"61-" []
+"62+" []
+"62-" []
+"63+" []
+"63-" []
+"64+" []
+"64-" []
+"65+" []
+"65-" []
+"66+" []
+"66-" []
+"69+" []
+"69-" []
+"70+" []
+"70-" []
+"71+" []
+"71-" []
+"72+" []
+"72-" []
+"73+" []
+"73-" []
+"74+" []
+"74-" []
+"75+" []
+"75-" []
+"77+" []
+"77-" []
+"78+" []
+"78-" []
+"80+" []
+"80-" []
+"81+" []
+"81-" []
+"82+" []
+"82-" []
+"84+" []
+"84-" []
+"85+" []
+"85-" []
+"86+" []
+"86-" []
+"87+" []
+"87-" []
+"88+" []
+"88-" []
+"89+" []
+"89-" []
+"90+" []
+"90-" []
+"91+" []
+"91-" []
+"93+" []
+"93-" []
+"94+" []
+"94-" []
+"95+" []
+"95-" []
+"98+" []
+"98-" []
+"99+" []
+"99-" []
+"100+" []
+"100-" []
+"101+" []
+"101-" []
+"102+" []
+"102-" []
+"103+" []
+"103-" []
+"104+" []
+"104-" []
+"105+" []
+"105-" []
+"106+" []
+"106-" []
+"107+" []
+"107-" []
+"108+" []
+"108-" []
+"109+" []
+"109-" []
+"110+" []
+"110-" []
+"111+" []
+"111-" []
+"112+" []
+"112-" []
+"113+" []
+"113-" []
+"114+" []
+"114-" []
+"115+" []
+"115-" []
+"116+" []
+"116-" []
+"117+" []
+"117-" []
+"119+" []
+"119-" []
+"120+" []
+"120-" []
+"121+" []
+"121-" []
+"122+" []
+"122-" []
+"123+" []
+"123-" []
+"124+" []
+"124-" []
+"125+" []
+"125-" []
+"126+" []
+"126-" []
+"127+" []
+"127-" []
+"128+" []
+"128-" []
+"129+" []
+"129-" []
+"130+" []
+"130-" []
+"131+" []
+"131-" []
+"132+" []
+"132-" []
+"133+" []
+"133-" []
+"134+" []
+"134-" []
+"136+" []
+"136-" []
+"137+" []
+"137-" []
+"138+" []
+"138-" []
+"139+" []
+"139-" []
+"140+" []
+"140-" []
+"141+" []
+"141-" []
+"142+" []
+"142-" []
+"143+" []
+"143-" []
+"145+" []
+"145-" []
+"146+" []
+"146-" []
+"147+" []
+"147-" []
+"149+" []
+"149-" []
+"150+" []
+"150-" []
+"151+" []
+"151-" []
+"152+" []
+"152-" []
+"153+" []
+"153-" []
+"154+" []
+"154-" []
+"155+" []
+"155-" []
+"156+" []
+"156-" []
+"157+" []
+"157-" []
+"158+" []
+"158-" []
+"159+" []
+"159-" []
+"160+" []
+"160-" []
+"161+" []
+"161-" []
+"162+" []
+"162-" []
+"163+" []
+"163-" []
+"164+" []
+"164-" []
+"165+" []
+"165-" []
+"166+" []
+"166-" []
+"167+" []
+"167-" []
+"168+" []
+"168-" []
+"169+" []
+"169-" []
+"170+" []
+"170-" []
+"171+" []
+"171-" []
+"172+" []
+"172-" []
+"173+" []
+"173-" []
+"174+" []
+"174-" []
+"177+" []
+"177-" []
+"178+" []
+"178-" []
+"179+" []
+"179-" []
+"180+" []
+"180-" []
+"181+" []
+"181-" []
+"182+" []
+"182-" []
+"183+" []
+"183-" []
+"184+" []
+"184-" []
+"185+" []
+"185-" []
+"186+" []
+"186-" []
+"187+" []
+"187-" []
+"190+" []
+"190-" []
+"191+" []
+"191-" []
+"192+" []
+"192-" []
+"193+" []
+"193-" []
+"194+" []
+"194-" []
+"195+" []
+"195-" []
+"196+" []
+"196-" []
+"197+" []
+"197-" []
+"198+" []
+"198-" []
+"199+" []
+"199-" []
+"200+" []
+"200-" []
+"202+" []
+"202-" []
+"203+" []
+"203-" []
+"205+" []
+"205-" []
+"206+" []
+"206-" []
+"207+" []
+"207-" []
+"208+" []
+"208-" []
+"209+" []
+"209-" []
+"210+" []
+"210-" []
+"211+" []
+"211-" []
+"212+" []
+"212-" []
+"213+" []
+"213-" []
+"215+" []
+"215-" []
+"216+" []
+"216-" []
+"217+" []
+"217-" []
+"218+" []
+"218-" []
+"219+" []
+"219-" []
+"220+" []
+"220-" []
+"221+" []
+"221-" []
+"222+" []
+"222-" []
+"223+" []
+"223-" []
+"224+" []
+"224-" []
+"225+" []
+"225-" []
+"227+" []
+"227-" []
+"228+" []
+"228-" []
+"229+" []
+"229-" []
+"230+" []
+"230-" []
+"231+" []
+"231-" []
+"232+" []
+"232-" []
+"233+" []
+"233-" []
+"234+" []
+"234-" []
+"235+" []
+"235-" []
+"237+" []
+"237-" []
+"238+" []
+"238-" []
+"239+" []
+"239-" []
+"240+" []
+"240-" []
+"242+" []
+"242-" []
+"243+" []
+"243-" []
+"244+" []
+"244-" []
+"245+" []
+"245-" []
+"246+" []
+"246-" []
+"247+" []
+"247-" []
+"248+" []
+"248-" []
+"249+" []
+"249-" []
+"250+" []
+"250-" []
+"251+" []
+"251-" []
+"254+" []
+"254-" []
+"255+" []
+"255-" []
+"256+" []
+"256-" []
+"257+" []
+"257-" []
+"260+" []
+"260-" []
+"261+" []
+"261-" []
+"262+" []
+"262-" []
+"263+" []
+"263-" []
+"264+" []
+"264-" []
+"265+" []
+"265-" []
+"267+" []
+"267-" []
+"268+" []
+"268-" []
+"269+" []
+"269-" []
+"270+" []
+"270-" []
+"272+" []
+"272-" []
+"273+" []
+"273-" []
+"274+" []
+"274-" []
+"275+" []
+"275-" []
+"276+" []
+"276-" []
+"278+" []
+"278-" []
+"280+" []
+"280-" []
+"282+" []
+"282-" []
+"283+" []
+"283-" []
+"284+" []
+"284-" []
+"287+" []
+"287-" []
+"288+" []
+"288-" []
+"289+" []
+"289-" []
+"290+" []
+"290-" []
+"291+" []
+"291-" []
+"292+" []
+"292-" []
+"293+" []
+"293-" []
+"294+" []
+"294-" []
+"295+" []
+"295-" []
+"296+" []
+"296-" []
+"297+" []
+"297-" []
+"298+" []
+"298-" []
+"299+" []
+"299-" []
+"300+" []
+"300-" []
+"302+" []
+"302-" []
+"303+" []
+"303-" []
+"304+" []
+"304-" []
+"305+" []
+"305-" []
+"306+" []
+"306-" []
+"307+" []
+"307-" []
+"308+" []
+"308-" []
+"309+" []
+"309-" []
+"310+" []
+"310-" []
+"311+" []
+"311-" []
+"312+" []
+"312-" []
+"313+" []
+"313-" []
+"314+" []
+"314-" []
+"315+" []
+"315-" []
+"316+" []
+"316-" []
+"317+" []
+"317-" []
+"318+" []
+"318-" []
+"319+" []
+"319-" []
+"320+" []
+"320-" []
+"321+" []
+"321-" []
+"323+" []
+"323-" []
+"324+" []
+"324-" []
+"325+" []
+"325-" []
+"326+" []
+"326-" []
+"327+" []
+"327-" []
+"328+" []
+"328-" []
+"329+" []
+"329-" []
+"330+" []
+"330-" []
+"331+" []
+"331-" []
+"332+" []
+"332-" []
+"333+" []
+"333-" []
+"334+" []
+"334-" []
+"335+" []
+"335-" []
+"336+" []
+"336-" []
+"337+" []
+"337-" []
+"338+" []
+"338-" []
+"340+" []
+"340-" []
+"341+" []
+"341-" []
+"342+" []
+"342-" []
+"343+" []
+"343-" []
+"344+" []
+"344-" []
+"345+" []
+"345-" []
+"346+" []
+"346-" []
+"347+" []
+"347-" []
+"348+" []
+"348-" []
+"349+" []
+"349-" []
+"350+" []
+"350-" []
+"351+" []
+"351-" []
+"355+" []
+"355-" []
+"356+" []
+"356-" []
+"357+" []
+"357-" []
+"358+" []
+"358-" []
+"359+" []
+"359-" []
+"360+" []
+"360-" []
+"361+" []
+"361-" []
+"362+" []
+"362-" []
+"363+" []
+"363-" []
+"364+" []
+"364-" []
+"365+" []
+"365-" []
+"366+" []
+"366-" []
+"367+" []
+"367-" []
+"368+" []
+"368-" []
+"369+" []
+"369-" []
+"370+" []
+"370-" []
+"371+" []
+"371-" []
+"372+" []
+"372-" []
+"373+" []
+"373-" []
+"374+" []
+"374-" []
+"375+" []
+"375-" []
+"376+" []
+"376-" []
+"377+" []
+"377-" []
+"379+" []
+"379-" []
+"382+" []
+"382-" []
+"383+" []
+"383-" []
+"384+" []
+"384-" []
+"385+" []
+"385-" []
+"386+" []
+"386-" []
+"387+" []
+"387-" []
+"388+" []
+"388-" []
+"389+" []
+"389-" []
+"390+" []
+"390-" []
+"391+" []
+"391-" []
+"393+" []
+"393-" []
+"394+" []
+"394-" []
+"395+" []
+"395-" []
+"396+" []
+"396-" []
+"397+" []
+"397-" []
+"398+" []
+"398-" []
+"399+" []
+"399-" []
+"400+" []
+"400-" []
+"401+" []
+"401-" []
+"402+" []
+"402-" []
+"403+" []
+"403-" []
+"404+" []
+"404-" []
+"405+" []
+"405-" []
+"406+" []
+"406-" []
+"407+" []
+"407-" []
+"408+" []
+"408-" []
+"409+" []
+"409-" []
+"410+" []
+"410-" []
+"411+" []
+"411-" []
+"413+" []
+"413-" []
+"414+" []
+"414-" []
+"415+" []
+"415-" []
+"416+" []
+"416-" []
+"417+" []
+"417-" []
+"418+" []
+"418-" []
+"419+" []
+"419-" []
+"420+" []
+"420-" []
+"422+" []
+"422-" []
+"423+" []
+"423-" []
+"424+" []
+"424-" []
+"425+" []
+"425-" []
+"426+" []
+"426-" []
+"427+" []
+"427-" []
+"428+" []
+"428-" []
+"429+" []
+"429-" []
+"430+" []
+"430-" []
+"431+" []
+"431-" []
+"432+" []
+"432-" []
+"433+" []
+"433-" []
+"434+" []
+"434-" []
+"435+" []
+"435-" []
+"436+" []
+"436-" []
+"437+" []
+"437-" []
+"438+" []
+"438-" []
+"439+" []
+"439-" []
+"440+" []
+"440-" []
+"441+" []
+"441-" []
+"443+" []
+"443-" []
+"444+" []
+"444-" []
+"445+" []
+"445-" []
+"447+" []
+"447-" []
+"450+" []
+"450-" []
+"451+" []
+"451-" []
+"452+" []
+"452-" []
+"453+" []
+"453-" []
+"454+" []
+"454-" []
+"455+" []
+"455-" []
+"457+" []
+"457-" []
+"459+" []
+"459-" []
+"460+" []
+"460-" []
+"462+" []
+"462-" []
+"463+" []
+"463-" []
+"465+" []
+"465-" []
+"466+" []
+"466-" []
+"467+" []
+"467-" []
+"468+" []
+"468-" []
+"469+" []
+"469-" []
+"471+" []
+"471-" []
+"472+" []
+"472-" []
+"473+" []
+"473-" []
+"474+" []
+"474-" []
+"475+" []
+"475-" []
+"476+" []
+"476-" []
+"477+" []
+"477-" []
+"478+" []
+"478-" []
+"479+" []
+"479-" []
+"480+" []
+"480-" []
+"481+" []
+"481-" []
+"483+" []
+"483-" []
+"484+" []
+"484-" []
+"485+" []
+"485-" []
+"486+" []
+"486-" []
+"487+" []
+"487-" []
+"488+" []
+"488-" []
+"490+" []
+"490-" []
+"491+" []
+"491-" []
+"493+" []
+"493-" []
+"494+" []
+"494-" []
+"495+" []
+"495-" []
+"496+" []
+"496-" []
+"498+" []
+"498-" []
+"500+" []
+"500-" []
+"502+" []
+"502-" []
+"505+" []
+"505-" []
+"507+" []
+"507-" []
+"508+" []
+"508-" []
+"512+" []
+"512-" []
+"513+" []
+"513-" []
+"514+" []
+"514-" []
+"516+" []
+"516-" []
+"517+" []
+"517-" []
+"518+" []
+"518-" []
+"519+" []
+"519-" []
+"520+" []
+"520-" []
+"521+" []
+"521-" []
+"522+" []
+"522-" []
+"523+" []
+"523-" []
+"524+" []
+"524-" []
+"525+" []
+"525-" []
+"526+" []
+"526-" []
+"527+" []
+"527-" []
+"528+" []
+"528-" []
+"533+" []
+"533-" []
+"534+" []
+"534-" []
+"535+" []
+"535-" []
+"538+" []
+"538-" []
+"541+" []
+"541-" []
+"542+" []
+"542-" []
+"543+" []
+"543-" []
+"544+" []
+"544-" []
+"545+" []
+"545-" []
+"547+" []
+"547-" []
+"548+" []
+"548-" []
+"549+" []
+"549-" []
+"550+" []
+"550-" []
+"551+" []
+"551-" []
+"552+" []
+"552-" []
+"554+" []
+"554-" []
+"556+" []
+"556-" []
+"557+" []
+"557-" []
+"558+" []
+"558-" []
+"559+" []
+"559-" []
+"560+" []
+"560-" []
+"561+" []
+"561-" []
+"562+" []
+"562-" []
+"564+" []
+"564-" []
+"565+" []
+"565-" []
+"566+" []
+"566-" []
+"567+" []
+"567-" []
+"568+" []
+"568-" []
+"569+" []
+"569-" []
+"570+" []
+"570-" []
+"571+" []
+"571-" []
+"572+" []
+"572-" []
+"573+" []
+"573-" []
+"574+" []
+"574-" []
+"575+" []
+"575-" []
+"576+" []
+"576-" []
+"577+" []
+"577-" []
+"578+" []
+"578-" []
+"579+" []
+"579-" []
+"580+" []
+"580-" []
+"581+" []
+"581-" []
+"582+" []
+"582-" []
+"583+" []
+"583-" []
+"584+" []
+"584-" []
+"585+" []
+"585-" []
+"587+" []
+"587-" []
+"588+" []
+"588-" []
+"589+" []
+"589-" []
+"591+" []
+"591-" []
+"592+" []
+"592-" []
+"593+" []
+"593-" []
+"594+" []
+"594-" []
+"596+" []
+"596-" []
+"597+" []
+"597-" []
+"598+" []
+"598-" []
+"599+" []
+"599-" []
+"600+" []
+"600-" []
+"601+" []
+"601-" []
+"602+" []
+"602-" []
+"603+" []
+"603-" []
+"604+" []
+"604-" []
+"605+" []
+"605-" []
+"606+" []
+"606-" []
+"607+" []
+"607-" []
+"609+" []
+"609-" []
+"610+" []
+"610-" []
+"611+" []
+"611-" []
+"612+" []
+"612-" []
+"613+" []
+"613-" []
+"614+" []
+"614-" []
+"615+" []
+"615-" []
+"616+" []
+"616-" []
+"617+" []
+"617-" []
+"618+" []
+"618-" []
+"619+" []
+"619-" []
+"620+" []
+"620-" []
+"621+" []
+"621-" []
+"622+" []
+"622-" []
+"624+" []
+"624-" []
+"625+" []
+"625-" []
+"626+" []
+"626-" []
+"627+" []
+"627-" []
+"628+" []
+"628-" []
+"629+" []
+"629-" []
+"630+" []
+"630-" []
+"632+" []
+"632-" []
+"633+" []
+"633-" []
+"634+" []
+"634-" []
+"635+" []
+"635-" []
+"636+" []
+"636-" []
+"637+" []
+"637-" []
+"638+" []
+"638-" []
+"639+" []
+"639-" []
+"640+" []
+"640-" []
+"641+" []
+"641-" []
+"642+" []
+"642-" []
+"644+" []
+"644-" []
+"645+" []
+"645-" []
+"646+" []
+"646-" []
+"647+" []
+"647-" []
+"648+" []
+"648-" []
+"649+" []
+"649-" []
+"650+" []
+"650-" []
+"651+" []
+"651-" []
+"652+" []
+"652-" []
+"653+" []
+"653-" []
+"654+" []
+"654-" []
+"655+" []
+"655-" []
+"656+" []
+"656-" []
+"657+" []
+"657-" []
+"658+" []
+"658-" []
+"659+" []
+"659-" []
+"660+" []
+"660-" []
+"661+" []
+"661-" []
+"662+" []
+"662-" []
+"664+" []
+"664-" []
+"665+" []
+"665-" []
+"666+" []
+"666-" []
+"667+" []
+"667-" []
+"668+" []
+"668-" []
+"670+" []
+"670-" []
+"671+" []
+"671-" []
+"674+" []
+"674-" []
+"675+" []
+"675-" []
+"676+" []
+"676-" []
+"677+" []
+"677-" []
+"678+" []
+"678-" []
+"679+" []
+"679-" []
+"680+" []
+"680-" []
+"681+" []
+"681-" []
+"682+" []
+"682-" []
+"683+" []
+"683-" []
+"684+" []
+"684-" []
+"685+" []
+"685-" []
+"688+" []
+"688-" []
+"689+" []
+"689-" []
+"690+" []
+"690-" []
+"691+" []
+"691-" []
+"692+" []
+"692-" []
+"693+" []
+"693-" []
+"694+" []
+"694-" []
+"696+" []
+"696-" []
+"697+" []
+"697-" []
+"698+" []
+"698-" []
+"700+" []
+"700-" []
+"701+" []
+"701-" []
+"702+" []
+"702-" []
+"703+" []
+"703-" []
+"704+" []
+"704-" []
+"705+" []
+"705-" []
+"706+" []
+"706-" []
+"707+" []
+"707-" []
+"708+" []
+"708-" []
+"709+" []
+"709-" []
+"711+" []
+"711-" []
+"712+" []
+"712-" []
+"713+" []
+"713-" []
+"716+" []
+"716-" []
+"717+" []
+"717-" []
+"718+" []
+"718-" []
+"719+" []
+"719-" []
+"720+" []
+"720-" []
+"721+" []
+"721-" []
+"722+" []
+"722-" []
+"723+" []
+"723-" []
+"724+" []
+"724-" []
+"725+" []
+"725-" []
+"726+" []
+"726-" []
+"727+" []
+"727-" []
+"728+" []
+"728-" []
+"729+" []
+"729-" []
+"730+" []
+"730-" []
+"731+" []
+"731-" []
+"732+" []
+"732-" []
+"734+" []
+"734-" []
+"735+" []
+"735-" []
+"736+" []
+"736-" []
+"737+" []
+"737-" []
+"738+" []
+"738-" []
+"739+" []
+"739-" []
+"740+" []
+"740-" []
+"741+" []
+"741-" []
+"742+" []
+"742-" []
+"743+" []
+"743-" []
+"744+" []
+"744-" []
+"745+" []
+"745-" []
+"746+" []
+"746-" []
+"747+" []
+"747-" []
+"748+" []
+"748-" []
+"749+" []
+"749-" []
+"750+" []
+"750-" []
+"751+" []
+"751-" []
+"752+" []
+"752-" []
+"754+" []
+"754-" []
+"755+" []
+"755-" []
+"756+" []
+"756-" []
+"757+" []
+"757-" []
+"758+" []
+"758-" []
+"759+" []
+"759-" []
+"760+" []
+"760-" []
+"761+" []
+"761-" []
+"763+" []
+"763-" []
+"766+" []
+"766-" []
+"767+" []
+"767-" []
+"768+" []
+"768-" []
+"769+" []
+"769-" []
+"770+" []
+"770-" []
+"771+" []
+"771-" []
+"773+" []
+"773-" []
+"775+" []
+"775-" []
+"776+" []
+"776-" []
+"777+" []
+"777-" []
+"778+" []
+"778-" []
+"779+" []
+"779-" []
+"780+" []
+"780-" []
+"781+" []
+"781-" []
+"782+" []
+"782-" []
+"783+" []
+"783-" []
+"784+" []
+"784-" []
+"785+" []
+"785-" []
+"786+" []
+"786-" []
+"787+" []
+"787-" []
+"788+" []
+"788-" []
+"790+" []
+"790-" []
+"791+" []
+"791-" []
+"792+" []
+"792-" []
+"793+" []
+"793-" []
+"795+" []
+"795-" []
+"796+" []
+"796-" []
+"797+" []
+"797-" []
+"798+" []
+"798-" []
+"799+" []
+"799-" []
+"801+" []
+"801-" []
+"802+" []
+"802-" []
+"803+" []
+"803-" []
+"804+" []
+"804-" []
+"805+" []
+"805-" []
+"806+" []
+"806-" []
+"807+" []
+"807-" []
+"808+" []
+"808-" []
+"809+" []
+"809-" []
+"810+" []
+"810-" []
+"812+" []
+"812-" []
+"813+" []
+"813-" []
+"814+" []
+"814-" []
+"815+" []
+"815-" []
+"817+" []
+"817-" []
+"818+" []
+"818-" []
+"819+" []
+"819-" []
+"820+" []
+"820-" []
+"821+" []
+"821-" []
+"822+" []
+"822-" []
+"823+" []
+"823-" []
+"824+" []
+"824-" []
+"825+" []
+"825-" []
+"826+" []
+"826-" []
+"827+" []
+"827-" []
+"828+" []
+"828-" []
+"829+" []
+"829-" []
+"830+" []
+"830-" []
+"831+" []
+"831-" []
+"832+" []
+"832-" []
+"833+" []
+"833-" []
+"835+" []
+"835-" []
+"836+" []
+"836-" []
+"837+" []
+"837-" []
+"838+" []
+"838-" []
+"839+" []
+"839-" []
+"840+" []
+"840-" []
+"841+" []
+"841-" []
+"842+" []
+"842-" []
+"843+" []
+"843-" []
+"844+" []
+"844-" []
+"845+" []
+"845-" []
+"846+" []
+"846-" []
+"847+" []
+"847-" []
+"848+" []
+"848-" []
+"850+" []
+"850-" []
+"851+" []
+"851-" []
+"853+" []
+"853-" []
+"854+" []
+"854-" []
+"855+" []
+"855-" []
+"856+" []
+"856-" []
+"857+" []
+"857-" []
+"858+" []
+"858-" []
+"859+" []
+"859-" []
+"860+" []
+"860-" []
+"861+" []
+"861-" []
+"862+" []
+"862-" []
+"863+" []
+"863-" []
+"864+" []
+"864-" []
+"865+" []
+"865-" []
+"866+" []
+"866-" []
+"868+" []
+"868-" []
+"869+" []
+"869-" []
+"870+" []
+"870-" []
+"871+" []
+"871-" []
+"872+" []
+"872-" []
+"873+" []
+"873-" []
+"875+" []
+"875-" []
+"876+" []
+"876-" []
+"877+" []
+"877-" []
+"878+" []
+"878-" []
+"879+" []
+"879-" []
+"880+" []
+"880-" []
+"881+" []
+"881-" []
+"882+" []
+"882-" []
+"886+" []
+"886-" []
+"888+" []
+"888-" []
+"889+" []
+"889-" []
+"890+" []
+"890-" []
+"891+" []
+"891-" []
+"892+" []
+"892-" []
+"893+" []
+"893-" []
+"894+" []
+"894-" []
+"895+" []
+"895-" []
+"896+" []
+"896-" []
+"897+" []
+"897-" []
+"898+" []
+"898-" []
+"899+" []
+"899-" []
+"900+" []
+"900-" []
+"901+" []
+"901-" []
+"903+" []
+"903-" []
+"904+" []
+"904-" []
+"905+" []
+"905-" []
+"906+" []
+"906-" []
+"907+" []
+"907-" []
+"908+" []
+"908-" []
+"909+" []
+"909-" []
+"910+" []
+"910-" []
+"911+" []
+"911-" []
+"912+" []
+"912-" []
+"913+" []
+"913-" []
+"914+" []
+"914-" []
+"915+" []
+"915-" []
+"916+" []
+"916-" []
+"917+" []
+"917-" []
+"918+" []
+"918-" []
+"919+" []
+"919-" []
+"50+" -> "702-" [d=-24]
+"50-" -> "233-" [d=-4]
+"53-" -> "905-" [d=-23]
+"70-" -> "172+" [d=-6]
+"75-" -> "349-" [d=146]
+"94+" -> "385+" [d=2]
+"94-" -> "805+" [d=-9]
+"106+" -> "749-" [d=240]
+"140-" -> "775-" [d=53]
+"172-" -> "70+" [d=-6]
+"183+" -> "619-" [d=99]
+"203+" -> "668-" [d=-19]
+"203-" -> "899+" [d=1]
+"215-" -> "638+" [d=58]
+"218-" -> "720-" [d=75]
+"220+" -> "717+" [d=36]
+"220-" -> "404-" [d=-22]
+"222+" -> "763-" [d=10]
+"222-" -> "604-" [d=6]
+"233+" -> "50+" [d=-4]
+"297+" -> "465+" [d=-15]
+"309+" -> "759-" [d=8]
+"323-" -> "477-" [d=138]
+"349+" -> "75+" [d=146]
+"358+" -> "846+" [d=-22]
+"358-" -> "664+" [d=-23]
+"385-" -> "94-" [d=2]
+"404+" -> "220+" [d=-22]
+"441+" -> "905+" [d=-6]
+"451+" -> "906+" [d=114]
+"457-" -> "671-" [d=192]
+"465-" -> "297-" [d=-15]
+"477+" -> "323+" [d=138]
+"477-" -> "906-" [d=-11]
+"568-" -> "749+" [d=263]
+"588+" -> "638-" [d=-11]
+"604+" -> "222+" [d=6]
+"619+" -> "183-" [d=99]
+"619-" -> "658-" [d=-2]
+"638+" -> "588-" [d=-11]
+"638+" -> "721-" [d=140]
+"638-" -> "215+" [d=58]
+"658+" -> "619+" [d=-2]
+"664-" -> "358+" [d=-23]
+"668+" -> "203-" [d=-19]
+"671+" -> "457+" [d=192]
+"702+" -> "50-" [d=-24]
+"717-" -> "220-" [d=36]
+"719-" -> "832+" [d=22]
+"720+" -> "218+" [d=75]
+"721+" -> "638-" [d=140]
+"749+" -> "106-" [d=240]
+"749-" -> "568+" [d=263]
+"759+" -> "309-" [d=8]
+"763+" -> "222-" [d=10]
+"775+" -> "140+" [d=53]
+"805-" -> "94+" [d=-9]
+"832-" -> "719+" [d=22]
+"846-" -> "358-" [d=-22]
+"899-" -> "203+" [d=1]
+"905+" -> "53+" [d=-23]
+"905-" -> "441-" [d=-6]
+"906+" -> "477+" [d=-11]
+"906-" -> "451-" [d=114]
+"911-" -> "914+" [d=-22]
+"914-" -> "911+" [d=-22]
+}
+50+	702-	(-24)
+50-	233-	(-4)
+70-	172+	(-6)
+75-	349-	(146)
+94+	385+	(2)
+106+	749-	(240)
+140-	775-	(53)
+183+	619-	(99)
+203+	668-	(-19)
+203-	899+	(1)
+215-	638+	(58)
+218-	720-	(75)
+220+	717+	(36)
+222+	763-	(10)
+222-	604-	(6)
+309+	759-	(8)
+323-	477-	(138)
+358-	664+	(-23)
+451+	906+	(114)
+457-	671-	(192)
+477-	906-	(-11)
+568-	749+	(263)
+619-	658-	(-2)
+719-	832+	(22)
+Overlap: 8
+Scaffold: 24
+No overlap: 7
+Insignificant (<5bp): 7
+Homopolymer: 0
+Motif: 0
+Ambiguous: 0
+SimpleGraph -vv   -j8 -k25 -o /path/to/test/test-4.path1 /path/to/test/test-4.dot /path/to/test/test-3.dist
+Reading `/path/to/test/test-4.dot'...
+V=1628 E=788 E/V=0.484
+Degree: █▂_
+        01234
+0: 65% 1: 23% 2-4: 12% 5+: 0.061% max: 5
+Reading `/path/to/test/test-3.dist'...
+
+* 70-
+Constraints: 172+,38
+Paths: 1
+922+ 172+
+172+,-6,15,12.6	dist: 1 diff: 7 buffer: 44 n: 15
+Solutions: 1
+922+ 172+ length: 448 sumdiff: 7
+"70-" -> "172+" [d=1]
+"70-" -> "922+" [d=-24]
+
+* 50-
+Constraints: 233-,36
+Paths: 1
+921+ 233-
+233-,-4,19,11.2	dist: 1 diff: 5 buffer: 40 n: 19
+Solutions: 1
+921+ 233- length: 520 sumdiff: 5
+"50-" -> "233-" [d=1]
+"50-" -> "921+" [d=-24]
+
+* 50+
+Constraints: 702-,20
+Paths: 1
+920+ 702-
+702-,-24,15,12.6	dist: 1 diff: 25 buffer: 44 n: 15
+Solutions: 1
+920+ 702- length: 340 sumdiff: 25
+"50+" -> "702-" [d=1]
+"50+" -> "920+" [d=-24]
+
+* 94-
+Constraints: 805+,31
+Paths: 1
+805+
+805+,-7,21,10.6	dist: -9 diff: -2 buffer: 38 n: 21
+Solutions: 1
+805+ length: 462 sumdiff: 2
+"94-" -> "805+" [d=-9]
+
+* 94+
+Constraints: 385+,51
+Paths: 1
+924+ 385+
+385+,2,12,14.1	dist: 2 diff: 0 buffer: 49 n: 12
+Solutions: 1
+924+ 385+ length: 983 sumdiff: 0
+"94+" -> "385+" [d=2]
+"94+" -> "924+" [d=-24]
+
+* 203-
+Constraints: 899+,54
+Paths: 1
+929+ 899+
+899+,1,10,15.4	dist: 1 diff: 0 buffer: 53 n: 10
+Solutions: 1
+929+ 899+ length: 205 sumdiff: 0
+"203-" -> "899+" [d=1]
+"203-" -> "929+" [d=-24]
+
+* 203+
+Constraints: 668-,23
+Paths: 1
+928+ 668-
+668-,-19,17,11.8	dist: 1 diff: 20 buffer: 42 n: 17
+Solutions: 1
+928+ 668- length: 586 sumdiff: 20
+"203+" -> "668-" [d=1]
+"203+" -> "928+" [d=-24]
+
+* 220-
+Constraints: 404-,14
+Paths: 1
+404-
+404-,-24,21,10.6	dist: -22 diff: 2 buffer: 38 n: 21
+Solutions: 1
+404- length: 936 sumdiff: 2
+"220-" -> "404-" [d=-22]
+
+* 220+
+Constraints: 717+,85
+Paths: 1
+932+ 717+
+717+,36,12,14.1	dist: 36 diff: 0 buffer: 49 n: 12
+Solutions: 1
+932+ 717+ length: 336 sumdiff: 0
+"220+" -> "717+" [d=36]
+"220+" -> "932+" [d=-24]
+
+* 222-
+Constraints: 604-,43
+Paths: 1
+934+ 604-
+604-,6,23,10.2	dist: 6 diff: 0 buffer: 37 n: 23
+Solutions: 1
+934+ 604- length: 456 sumdiff: 0
+"222-" -> "604-" [d=6]
+"222-" -> "934+" [d=-24]
+
+* 349+
+Constraints: 75+,199
+Paths: 1
+923- 75+
+75+,146,10,15.4	dist: 146 diff: 0 buffer: 53 n: 10
+Solutions: 1
+923- 75+ length: 442 sumdiff: 0
+"349+" -> "75+" [d=146]
+"349+" -> "923-" [d=-24]
+
+* 222+
+Constraints: 763-,55
+Paths: 1
+933+ 763-
+763-,10,14,13.0	dist: 10 diff: 0 buffer: 45 n: 14
+Solutions: 1
+933+ 763- length: 204 sumdiff: 0
+"222+" -> "763-" [d=10]
+"222+" -> "933+" [d=-24]
+
+* 465-
+Constraints: 297-,24
+Paths: 1
+297-
+297-,-14,21,10.6	dist: -15 diff: -1 buffer: 38 n: 21
+Solutions: 1
+297- length: 367 sumdiff: 1
+"465-" -> "297-" [d=-15]
+
+* 358-
+Constraints: 664+,15
+Paths: 1
+937+ 664+
+664+,-23,21,10.6	dist: 1 diff: 24 buffer: 38 n: 21
+Solutions: 1
+937+ 664+ length: 434 sumdiff: 24
+"358-" -> "664+" [d=1]
+"358-" -> "937+" [d=-24]
+
+* 358+
+Constraints: 846+,29
+Paths: 1
+846+
+846+,-24,10,15.4	dist: -22 diff: 2 buffer: 53 n: 10
+Solutions: 1
+846+ length: 208 sumdiff: 2
+"358+" -> "846+" [d=-22]
+
+* 477-
+Constraints: 906-,31
+Paths: 1
+940+ 906-
+906-,-11,17,11.8	dist: 1 diff: 12 buffer: 42 n: 17
+Solutions: 1
+940+ 906- length: 1513 sumdiff: 12
+"477-" -> "906-" [d=1]
+"477-" -> "940+" [d=-24]
+
+* 477+
+Constraints: 323+,189
+Paths: 1
+936- 323+
+323+,138,11,14.7	dist: 138 diff: 0 buffer: 51 n: 11
+Solutions: 1
+936- 323+ length: 673 sumdiff: 0
+"477+" -> "323+" [d=138]
+"477+" -> "936-" [d=-24]
+
+* 619-
+Constraints: 658-,43
+Paths: 1
+942+ 658-
+658-,-2,14,13.0	dist: 1 diff: 3 buffer: 45 n: 14
+Solutions: 1
+942+ 658- length: 429 sumdiff: 3
+"619-" -> "658-" [d=1]
+"619-" -> "942+" [d=-24]
+
+* 619+
+Constraints: 183-,150
+Paths: 1
+927- 183-
+183-,99,11,14.7	dist: 99 diff: 0 buffer: 51 n: 11
+Solutions: 1
+927- 183- length: 405 sumdiff: 0
+"619+" -> "183-" [d=99]
+"619+" -> "927-" [d=-24]
+
+* 671+
+Constraints: 457+,241
+Paths: 1
+939- 457+
+457+,192,12,14.1	dist: 192 diff: 0 buffer: 49 n: 12
+Solutions: 1
+939- 457+ length: 947 sumdiff: 0
+"671+" -> "457+" [d=192]
+"671+" -> "939-" [d=-24]
+
+* 638-
+Constraints: 215+,107
+Paths: 1
+930- 215+
+215+,58,12,14.1	dist: 58 diff: 0 buffer: 49 n: 12
+Solutions: 1
+930- 215+ length: 353 sumdiff: 0
+"638-" -> "215+" [d=58]
+"638-" -> "930-" [d=-24]
+
+* 638+
+Constraints: 588-,40 721-,191
+Solutions: 0
+
+* 719-
+Constraints: 832+,66
+Paths: 1
+943+ 832+
+832+,22,15,12.6	dist: 22 diff: 0 buffer: 44 n: 15
+Solutions: 1
+943+ 832+ length: 426 sumdiff: 0
+"719-" -> "832+" [d=22]
+"719-" -> "943+" [d=-24]
+
+* 720+
+Constraints: 218+,113
+Paths: 1
+931- 218+
+218+,75,21,10.6	dist: 75 diff: 0 buffer: 38 n: 21
+Solutions: 1
+931- 218+ length: 409 sumdiff: 0
+"720+" -> "218+" [d=75]
+"720+" -> "931-" [d=-24]
+
+* 759+
+Constraints: 309-,52
+Paths: 1
+935- 309-
+309-,8,15,12.6	dist: 8 diff: 0 buffer: 44 n: 15
+Solutions: 1
+935- 309- length: 689 sumdiff: 0
+"759+" -> "309-" [d=8]
+"759+" -> "935-" [d=-24]
+
+* 775-
+Constraints: 325+,259
+Solutions: 0
+
+* 775+
+Constraints: 140+,97
+Paths: 1
+926- 140+
+140+,53,15,12.6	dist: 53 diff: 0 buffer: 44 n: 15
+Solutions: 1
+926- 140+ length: 1010 sumdiff: 0
+"775+" -> "140+" [d=53]
+"775+" -> "926-" [d=-24]
+
+* 749-
+Constraints: 568+,314
+Paths: 1
+941- 568+
+568+,263,11,14.7	dist: 263 diff: 0 buffer: 51 n: 11
+Solutions: 1
+941- 568+ length: 689 sumdiff: 0
+"749-" -> "568+" [d=263]
+"749-" -> "941-" [d=-24]
+
+* 749+
+Constraints: 106-,293
+Paths: 1
+925- 106-
+106-,240,10,15.4	dist: 240 diff: 0 buffer: 53 n: 10
+Solutions: 1
+925- 106- length: 564 sumdiff: 0
+"749+" -> "106-" [d=240]
+"749+" -> "925-" [d=-24]
+
+* 911-
+Constraints: 914+,23
+Paths: 1
+914+
+914+,-18,18,11.5	dist: -22 diff: -4 buffer: 41 n: 18
+Solutions: 1
+914+ length: 383 sumdiff: 4
+"911-" -> "914+" [d=-22]
+
+* 905-
+Constraints: 441-,19
+Paths: 1
+441-
+441-,-20,20,10.9	dist: -6 diff: 14 buffer: 39 n: 20
+Solutions: 1
+441- length: 376 sumdiff: 14
+"905-" -> "441-" [d=-6]
+
+* 905+
+Constraints: 53+,19
+Paths: 1
+53+
+53+,-24,16,12.2	dist: -23 diff: 1 buffer: 43 n: 16
+Solutions: 1
+53+ length: 509 sumdiff: 1
+"905+" -> "53+" [d=-23]
+
+* 906-
+Constraints: 451-,163
+Paths: 1
+938- 451-
+451-,114,12,14.1	dist: 114 diff: 0 buffer: 49 n: 12
+Solutions: 1
+938- 451- length: 494 sumdiff: 0
+"906-" -> "451-" [d=114]
+"906-" -> "938-" [d=-24]
+
+* 906+
+Constraints: 477+,31
+Paths: 1
+940- 477+
+477+,-11,17,11.8	dist: 1 diff: 12 buffer: 42 n: 17
+Solutions: 1
+940- 477+ length: 1387 sumdiff: 12
+"906+" -> "477+" [d=1]
+"906+" -> "940-" [d=-24]
+
+Total paths attempted: 34
+Unique path: 32
+No possible paths: 2
+No valid paths: 0
+Repetitive: 0
+Multiple valid paths: 0
+Too many solutions: 0
+Too complex: 0
+
+The minimum number of pairs in a distance estimate is 10.
+The minimum number of pairs used in a path is 10.
+abyss-index -vv --fai /path/to/test/test-3.fa
+Reading `/path/to/test/test-3.fa'...
+Read 790 contigs.
+Writing `/path/to/test/test-3.fa.fai'...
+abyss-index -vv --fai /path/to/test/test-4.fa
+Reading `/path/to/test/test-4.fa'...
+Read 24 contigs.
+Writing `/path/to/test/test-4.fa.fai'...
+cat /path/to/test/test-3.fa.fai /path/to/test/test-4.fa.fai \
+		|MergePaths -vv  -j8 -k25  -o /path/to/test/test-4.path2 - /path/to/test/test-4.path1
+Reading `-'...
+Reading `/path/to/test/test-4.path1'...
+Repeats: none
+
+Added 0 missing edges.
+Removed 0 transitive edges of 2 edges leaving 2 edges.
+Removed 0 small overlap edges.
+V=42 E=2 E/V=0.0476
+Degree: █
+        01234
+0: 95% 1: 4.8% 2-4: 0% 5+: 0% max: 1
+
+Merging paths
+
+* 477- 906-
+477-	323- 936+ 477- 940+ 906-
+906-	477- 940+ 906- 938- 451-
+	323- 936+ 477- 940+ 906- 938- 451-
+
+Repeats: none
+Removing redundant contigs
+
+50+	233+ 921- 50+ 920+ 702-
+
+70+	172- 922- 70+
+
+94+	805- 94+ 924+ 385+
+
+203+	899- 929- 203+ 928+ 668-
+
+220+	404+ 220+ 932+ 717+
+
+222+	604+ 934- 222+ 933+ 763-
+
+349+	349+ 923- 75+
+
+358+	664- 937- 358+ 846+
+
+465+	297+ 465+
+
+477+	451+ 938+ 906+ 940- 477+ 936- 323+
+906+	451+ 938+ 906+ 940- 477+ 936- 323+
+
+619+	658+ 942- 619+ 927- 183-
+
+638+	215- 930+ 638+
+
+671+	671+ 939- 457+
+
+719+	832- 943- 719+
+
+720+	720+ 931- 218+
+
+749+	568- 941+ 749+ 925- 106-
+
+759+	759+ 935- 309-
+
+775+	775+ 926- 140+
+
+905+	441+ 905+ 53+
+
+911+	914- 911+
+PathOverlap --assemble -vv  -k25  /path/to/test/test-4.dot /path/to/test/test-4.path2 >/path/to/test/test-4.path3
+Reading `/path/to/test/test-4.dot'...
+Reading `/path/to/test/test-4.path2'...
+cat /path/to/test/test-3.fa /path/to/test/test-4.fa \
+		|PathConsensus -vv --dot -k25  -p0.9  -o /path/to/test/test-5.path -s /path/to/test/test-5.fa -g /path/to/test/test-5.dot - /path/to/test/test-4.dot /path/to/test/test-4.path3
+Reading `/path/to/test/test-4.dot'...
+Reading `-'...
+Reading `/path/to/test/test-4.path3'...
+Read 20 paths
+
+Ambiguous paths: 0
+Merged:          0
+No paths:        0
+Too many paths:  0
+Too complex:     0
+Dissimilar:      0
+cat /path/to/test/test-3.fa /path/to/test/test-4.fa /path/to/test/test-5.fa |MergeContigs -vv  -k25 -o /path/to/test/test-6.fa - /path/to/test/test-5.dot /path/to/test/test-5.path
+Reading `/path/to/test/test-5.dot'...
+Read 1628 vertices. Using 602 kB of memory.
+Reading `-'...
+Read 814 sequences. Using 877 kB of memory.
+Reading `/path/to/test/test-5.path'...
+Read 20 paths. Using 877 kB of memory.
+The minimum coverage of single-end contigs is 2.28.
+The minimum coverage of merged contigs is 4.01471.
+Consider increasing the coverage threshold parameter, c, to 4.01471.
+n	n:200	L50	min	N80	N50	N20	E-size	max	sum	name
+759	327	75	201	334	604	1751	989	3813	175107	/path/to/test/test-6.fa
+ln -sf /path/to/test/test-6.fa /path/to/test/test-contigs.fa
+PathOverlap --overlap -vv  -k25 --dot /path/to/test/test-5.dot /path/to/test/test-5.path >/path/to/test/test-6.dot
+Reading `/path/to/test/test-5.dot'...
+Reading `/path/to/test/test-5.path'...
+ln -sf /path/to/test/test-6.dot /path/to/test/test-contigs.dot
+abyss-map -vv  -j8 -l40    /path/to/test-data/reads1.fastq /path/to/test-data/reads2.fastq /path/to/test/test-6.fa \
+		|abyss-fixmate -vv  -l40  -h /path/to/test/test-6.hist \
+		|sort -snk3 -k4 \
+		|DistanceEst --dot --mean -vv  -j8 -k25 -l40 -s1000 -n10   -o /path/to/test/test-6.dist.dot /path/to/test/test-6.hist
+Reading from standard input...
+Reading `/path/to/test/test-6.fa'...
+Using 451 kB of memory and 594 B/sequence.
+Reading `/path/to/test/test-6.fa'...
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Read 228 kB in 759 contigs.
+Using 2.44 MB of memory and 10.7 B/bp.
+Read 4261 alignments. Hash load: 5 / 8 = 0.625 using 459 kB.
+Mapped 26632 of 40000 reads (66.6%)
+Mapped 26618 of 40000 reads uniquely (66.5%)
+Read 40000 alignments
+Mateless       0
+Unaligned   2285  11.4%
+Singleton   8798  44%
+FR          2828  14.1%
+RF             0
+FF             0
+Different   6089  30.4%
+Total      20000
+FR Stats mean: 495.1 median: 494 sd: 48.58 n: 2800 min: 369 max: 648 ignored: 28
+    __ ▁▁__▁▁▁▃▂▂▃▃▄▄▅▆▅▅▆▆▇█████▆█▇▅▅▅▆▅▆▅▃▃▃▃▂▂▁▁▁▁▁____ _
+Mate orientation FR: 2828 (100%) RF: 0 (0%)
+The library /path/to/test/test-6.hist is oriented forward-reverse (FR).
+Stats mean: 495.1 median: 494 sd: 48.58 n: 2800 min: 369 max: 648
+    __ ▁▁__▁▁▁▃▂▂▃▃▄▄▅▆▅▅▆▆▇█████▆█▇▅▅▅▆▅▆▅▃▃▃▃▂▂▁▁▁▁▁____ _
+Minimum and maximum distance are set to -24 and 648 bp.
+Duplicate rate of spanning fragments: 0/392 (0%)
+abyss-scaffold -vv   -k25 -s1000-10000 -n10 -g /path/to/test/test-6.path.dot  /path/to/test/test-6.dot /path/to/test/test-6.dist.dot >/path/to/test/test-6.path
+Reading `/path/to/test/test-6.dot'...
+V=1518 E=678 E/V=0.447
+Degree: █▁_
+        01234
+0: 70% 1: 17% 2-4: 13% 5+: 0.066% max: 5
+Reading `/path/to/test/test-6.dist.dot'...
+V=1518 E=703 E/V=0.463
+Degree: █▁_
+        01234
+0: 69% 1: 18% 2-4: 13% 5+: 0.066% max: 5
+Added 19 complementary edges.
+V=1518 E=722 E/V=0.476
+Degree: █▁_
+        01234
+0: 68% 1: 19% 2-4: 13% 5+: 0.066% max: 5
+warning: Removed 2 invalid edges.
+Removed 1506 vertices.
+Removed 0 edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 cyclic edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Added 0 edges to ambiguous vertices.
+Removed 0 tips.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Ambiguous:
+Cleared 0 ambiguous vertices.
+Removed 0 ambiguous vertices.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 transitive edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 tips.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 vertices in bubbles.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Popped:
+Weak edges:
+Removed 0 weak edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Assembled 6 contigs in 3 scaffolds.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+n	n:1000	L50	min	N80	N50	N20	E-size	max	sum	name
+756	19	6	1315	1752	3094	4947	3141	6122	47779	s=1000
+
+Removed 1510 vertices.
+Removed 0 edges.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 cyclic edges.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Added 0 edges to ambiguous vertices.
+Removed 0 tips.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Ambiguous:
+Cleared 0 ambiguous vertices.
+Removed 0 ambiguous vertices.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 transitive edges.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 tips.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 vertices in bubbles.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Popped:
+Weak edges:
+Removed 0 weak edges.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Assembled 4 contigs in 2 scaffolds.
+V=8 E=4 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+n	n:1000	L50	min	N80	N50	N20	E-size	max	sum	name
+757	20	7	1315	1700	2214	4947	2991	6122	47779	s=2000
+
+Removed 1518 vertices.
+Removed 0 edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 cyclic edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Added 0 edges to ambiguous vertices.
+Removed 0 tips.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Ambiguous:
+Cleared 0 ambiguous vertices.
+Removed 0 ambiguous vertices.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 transitive edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 tips.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 vertices in bubbles.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Popped:
+Weak edges:
+Removed 0 weak edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Assembled 0 contigs in 0 scaffolds.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+n	n:1000	L50	min	N80	N50	N20	E-size	max	sum	name
+759	22	9	1315	1700	2205	3191	2385	4066	47790	s=5000
+
+Removed 1518 vertices.
+Removed 0 edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 cyclic edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Added 0 edges to ambiguous vertices.
+Removed 0 tips.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Ambiguous:
+Cleared 0 ambiguous vertices.
+Removed 0 ambiguous vertices.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 transitive edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 tips.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Removed 0 vertices in bubbles.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Popped:
+Weak edges:
+Removed 0 weak edges.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+Assembled 0 contigs in 0 scaffolds.
+V=0 E=0 E/V=-nan
+Degree: 
+        01234
+0: -nan% 1: -nan% 2-4: -nan% 5+: -nan% max: 0
+n	n:1000	L50	min	N80	N50	N20	E-size	max	sum	name
+759	22	9	1315	1700	2205	3191	2385	4066	47790	s=10000
+
+Removed 1506 vertices.
+Removed 0 edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 cyclic edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Added 0 edges to ambiguous vertices.
+Removed 0 tips.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Ambiguous:
+Cleared 0 ambiguous vertices.
+Removed 0 ambiguous vertices.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 transitive edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 tips.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Removed 0 vertices in bubbles.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Popped:
+Weak edges:
+Removed 0 weak edges.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+Assembled 6 contigs in 3 scaffolds.
+V=12 E=6 E/V=0.5
+Degree: ▇▇
+        01234
+0: 50% 1: 50% 2-4: 0% 5+: 0% max: 1
+n	n:1000	L50	min	N80	N50	N20	E-size	max	sum	name
+756	19	6	1315	1752	3094	4947	3141	6122	47779	s=1000
+Best scaffold N50 is 3094 at s=1000.
+PathConsensus -vv --dot -k25  -p0.9  -s /path/to/test/test-7.fa -g /path/to/test/test-7.dot -o /path/to/test/test-7.path /path/to/test/test-6.fa /path/to/test/test-6.dot /path/to/test/test-6.path
+Reading `/path/to/test/test-6.dot'...
+Reading `/path/to/test/test-6.fa'...
+Reading `/path/to/test/test-6.path'...
+Read 3 paths
+
+* 948- 74N 962+
+no paths
+
+* 951- 74N 959-
+no paths
+
+* 952+ 74N 956-
+no paths
+
+Ambiguous paths: 3
+Merged:          0
+No paths:        3
+Too many paths:  0
+Too complex:     0
+Dissimilar:      0
+cat /path/to/test/test-6.fa /path/to/test/test-7.fa \
+		|MergeContigs -vv  -k25 -o /path/to/test/test-8.fa - /path/to/test/test-7.dot /path/to/test/test-7.path
+Reading `/path/to/test/test-7.dot'...
+Read 1518 vertices. Using 602 kB of memory.
+Reading `-'...
+Read 759 sequences. Using 864 kB of memory.
+Reading `/path/to/test/test-7.path'...
+Read 3 paths. Using 864 kB of memory.
+The minimum coverage of single-end contigs is 2.28.
+The minimum coverage of merged contigs is 3.83248.
+Consider increasing the coverage threshold parameter, c, to 3.83248.
+n	n:200	L50	min	N80	N50	N20	E-size	max	sum	name
+756	324	72	201	334	604	1883	1165	5827	175107	/path/to/test/test-8.fa
+ln -sf /path/to/test/test-8.fa /path/to/test/test-scaffolds.fa
+PathOverlap --overlap -vv  -k25 --dot /path/to/test/test-7.dot /path/to/test/test-7.path >/path/to/test/test-8.dot
+Reading `/path/to/test/test-7.dot'...
+Reading `/path/to/test/test-7.path'...
+ln -sf /path/to/test/test-8.dot /path/to/test/test-scaffolds.dot
+abyss-fac   /path/to/test/test-unitigs.fa /path/to/test/test-contigs.fa /path/to/test/test-scaffolds.fa |tee /path/to/test/test-stats.tab
+n	n:500	L50	min	N80	N50	N20	E-size	max	sum	name
+790	108	38	509	642	905	1323	1008	2260	93364	/path/to/test/test-unitigs.fa
+759	98	27	509	668	975	2197	1463	3813	100675	/path/to/test/test-contigs.fa
+756	95	24	509	668	975	3155	1769	5827	100675	/path/to/test/test-scaffolds.fa
+ln -sf /path/to/test/test-stats.tab /path/to/test/test-stats
+tr '\t' , </path/to/test/test-stats.tab >/path/to/test/test-stats.csv
+abyss-tabtomd /path/to/test/test-stats.tab >/path/to/test/test-stats.md
